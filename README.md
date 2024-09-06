@@ -25,6 +25,7 @@ git cms-addpkg Configuration/Generator
 `git clone git@github.com:bhbam/MCProduction_run3.git`
 
 `scram b -j 16`
+
 `cd MCProduction_run3`
 
 ### For signal production
