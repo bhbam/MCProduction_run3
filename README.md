@@ -16,7 +16,7 @@ git cms-init
 
 git cms-addpkg Configuration/Generator
 ```
-###To add filters for run3 just clone run3 branch only
+### To add filters for run3 just clone run3 branch only
 
 `git clone -b run3-generator-interface git@github.com:bhbam/GeneratorInterface.git`
 
