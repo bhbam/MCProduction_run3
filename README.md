@@ -28,7 +28,7 @@ git cms-addpkg Configuration/Generator
 
 `cd MCProduction_run3`
 
-### For signal production
+## For signal production
 `cd E2E-HToAATo4Tau`
 
 ### Step 1: Generate signal sample of mass 'X' in [3.7,14]. Please check the value of mass set in  script properly
