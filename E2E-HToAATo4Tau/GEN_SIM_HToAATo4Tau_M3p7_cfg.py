@@ -125,6 +125,8 @@ process.generator = cms.EDFilter("Pythia8ConcurrentGeneratorFilter",
             '25:m0 = 3.7',
             '25:onMode = off',
             '25:onIfMatch = 15 -15'
+            '15:onMode = on',
+            '15:offIfAny = 11 -11 13 -13'
         ),
         pythia8CP5Settings = cms.vstring(
             'Tune:pp 14',

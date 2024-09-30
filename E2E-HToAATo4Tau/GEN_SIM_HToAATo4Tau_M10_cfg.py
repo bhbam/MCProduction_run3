@@ -26,7 +26,7 @@ process.load('Configuration.StandardSequences.EndOfProcess_cff')
 process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
 
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(200),
+    input = cms.untracked.int32(20),
     output = cms.optional.untracked.allowed(cms.int32,cms.PSet)
 )
 
@@ -85,7 +85,7 @@ process.RAWSIMoutput = cms.OutputModule("PoolOutputModule",
         filterName = cms.untracked.string('')
     ),
     eventAutoFlushCompressedSize = cms.untracked.int32(20971520),
-    fileName = cms.untracked.string('file:GEN_SIM_HToAATo4Tau_M14.root'),
+    fileName = cms.untracked.string('file:GEN_SIM_HToAATo4Tau_M10.root'),
     outputCommands = process.RAWSIMEventContent.outputCommands,
     splitLevel = cms.untracked.int32(0)
 )
@@ -122,11 +122,11 @@ process.generator = cms.EDFilter("Pythia8ConcurrentGeneratorFilter",
             '35:onMode = off',
             '35:onIfMatch = 25 25',
             '25:mMin = 3',
-            '25:m0 = 14',
+            '25:m0 = 10',
             '25:onMode = off',
-            '25:onIfMatch = 15 -15'
+            '25:onIfMatch = 15 -15',
             '15:onMode = on',
-            '15:offIfAny = 11 -11 13 -13'
+            '15:offIfAny = 11 -11 13 -13',
         ),
         pythia8CP5Settings = cms.vstring(
             'Tune:pp 14',
