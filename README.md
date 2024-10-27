@@ -41,3 +41,6 @@ git cms-addpkg Configuration/Generator
 `cmsRun MiniAOD_HToAATo4Tau_cfg.py`  
 ### Step 5: Convert MiniAOD to NanoAOD. Use output file from Step 4 as Input file in step 5 (here)
 `cmsRun NanoAOD_HToAATo4Tau_cfg.py`
+
+## For mass regression sample production
+`cd E2E-AToTauTau`
