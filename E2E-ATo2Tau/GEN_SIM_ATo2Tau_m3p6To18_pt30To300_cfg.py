@@ -34,7 +34,7 @@ process.genAToTauTauFilter = cms.EDFilter("GenAToTauTauFilter",
 )
 
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(1000),
+    input = cms.untracked.int32(10),
     output = cms.optional.untracked.allowed(cms.int32,cms.PSet)
 )
 
@@ -108,8 +108,7 @@ from Configuration.AlCa.GlobalTag import GlobalTag
 process.GlobalTag = GlobalTag(process.GlobalTag, '130X_mcRun3_2023_realistic_postBPix_v5', '')
 
 
-process.generator = cms.EDFilter("Pythia8PtGunV3p1",
-# process.generator = cms.EDFilter("Pythia8PtGunV3",
+process.generator = cms.EDFilter("Pythia8PtGunV3",
     PGunParameters = cms.PSet(
         AddAntiParticle = cms.bool(True),
         MaxCTau = cms.double(3.0),
