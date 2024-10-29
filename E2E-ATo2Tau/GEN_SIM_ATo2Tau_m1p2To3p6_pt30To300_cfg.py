@@ -28,7 +28,7 @@ process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
 process.genAToTauTauFilter_unphysical = cms.EDFilter("GenAToTauTauFilter_unphysical",
     src       = cms.InputTag("genParticles"), #GenParticles collection as input
     nHiggs    = cms.double(1),                #Number of pdgID=25 candidates
-    tauPtCut  = cms.double(1.0),              #at least a GenTau with this minimum pT
+    tauPtCut  = cms.double(0.01),              #at least a GenTau with this minimum pT
     tauEtaCut = cms.double(2.4),              #GenTau eta
     taudRCut  = cms.double(0.04)             #Unphysical sample are below 3.6 which gives merged so I want to these hight merged
 )
