@@ -26,7 +26,7 @@ config.JobType.allowUndistributedCMSSW = True
 # Define input and units per job here:
 dataset  = {
 '3p6To18':'/GEN_SIM_ATo2Tau_m3p6To18_pt30To300_v2/lpcml-crab_aToTauTau_Hadronic_m3p6To18_pt30To300_pythia8_GEN_SIM_v2-c69efe833fac3615f1b10f8d0416619f/USER'
-,'1p2To3p6':'/GEN_SIM_ATo2Tau_m1p2To3p6_pt30To300_v2/lpcml-crab_aToTauTau_Hadronic_m1p2To3p6_pt30To300_pythia8_GEN_SIM_v2-06bc6119e68a2617a0c0118b8fcb3a32/USER'
+,'1p2To3p6':'/GEN_SIM_ATo2Tau_m1p2To3p6_pt30To300_v3/lpcml-crab_aToTauTau_Hadronic_m1p2To3p6_pt30To300_pythia8_GEN_SIM_v3-5aad074e51915d56b4961eb07520b5cb/USER'
 }.get(Mass_tag, None)
 
 

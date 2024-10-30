@@ -109,7 +109,6 @@ process.GlobalTag = GlobalTag(process.GlobalTag, '130X_mcRun3_2023_realistic_pos
 
 
 process.generator = cms.EDFilter("Pythia8PtGunV3p1",
-# process.generator = cms.EDFilter("Pythia8PtGunV3",
     PGunParameters = cms.PSet(
         AddAntiParticle = cms.bool(True),
         MaxCTau = cms.double(3.0),
