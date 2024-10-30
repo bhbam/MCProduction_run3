@@ -1,9 +1,9 @@
 from CRABClient.UserUtilities import config
 config = config()
 # See parameter defintions here: https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile#CRAB_configuration_parameters
-Mass_tag = 'm3p6To18'
+Mass_tag = 'm1p2To3p6' #'m3p6To18'#'m1p2To3p6'#'
 # Local job directory will be created in:
-config.General.requestName = 'aToTauTau_Hadronic_%s_pt30To300_pythia8_GEN_SIM'%Mass_tag
+config.General.requestName = 'aToTauTau_Hadronic_%s_pt30To300_pythia8_GEN_SIM_v3'%Mass_tag
 config.General.workArea = 'crab_MC'
 config.General.transferOutputs = True
 config.General.transferLogs = True
@@ -11,7 +11,7 @@ config.General.transferLogs = True
 # CMS cfg file goes here:
 config.JobType.pluginName = 'PrivateMC'
 config.JobType.psetName = 'GEN_SIM_ATo2Tau_%s_pt30To300_cfg.py'%Mass_tag
-config.Data.outputPrimaryDataset = 'GEN_SIM_ATo2Tau_%s_pt30To300'%Mass_tag
+config.Data.outputPrimaryDataset = 'GEN_SIM_ATo2Tau_%s_pt30To300_v3'%Mass_tag
 
 #config.JobType.maxMemoryMB = 2800
 
@@ -19,8 +19,8 @@ config.Data.outputPrimaryDataset = 'GEN_SIM_ATo2Tau_%s_pt30To300'%Mass_tag
 config.JobType.allowUndistributedCMSSW = True
 config.JobType.eventsPerLumi=500
 config.Data.splitting = 'EventBased'
-config.Data.unitsPerJob = 1000
-NJOBS = 10000
+config.Data.unitsPerJob = 500
+NJOBS = 1600
 config.Data.totalUnits = config.Data.unitsPerJob * NJOBS
 config.Data.publication = True
 

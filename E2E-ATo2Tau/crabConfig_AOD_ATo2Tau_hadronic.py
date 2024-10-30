@@ -7,17 +7,17 @@ config = config()
 # crab status -d <config.General.workArea>/<config.General.requestName>
 # To resubmit jobs:
 # crab resubmit -d <config.General.workArea>/<config.General.requestName>
-Mass_tag = 'm3p6To18' #
+Mass_tag = '3p6To18' #
 # Local job directory will be created in:
 # <config.General.workArea>/<config.General.requestName>
 config.General.workArea        = 'crab_MC'
-config.General.requestName     = 'HLT_Pielup_ATo4Tau_Hadronic_%s'%Mass_tag
+config.General.requestName     = 'AOD_ATo4Tau_Hadronic_M%s'%Mass_tag
 config.General.transferOutputs = True
 config.General.transferLogs    = True
 
 # CMS cfg file goes here:
 config.JobType.pluginName  = 'Analysis' # mass > 8 use this
-config.JobType.psetName    = 'HLT_Pielup_HToAATo4Tau_cfg.py' # cms cfg file for generating events
+config.JobType.psetName    = 'AOD_HToAATo4Tau_extra_collection_cfg.py' # cms cfg file for generating events
 # config.JobType.maxMemoryMB = 5000 #5000
 
 
@@ -25,13 +25,10 @@ config.Data.inputDBS = 'phys03'
 config.JobType.allowUndistributedCMSSW = True
 # Define input and units per job here:
 dataset  = {
-'3p6To18':'/GEN_SIM_ATo2Tau_m3p6To18_pt30To300_v2/lpcml-crab_aToTauTau_Hadronic_m3p6To18_pt30To300_pythia8_GEN_SIM_v2-c69efe833fac3615f1b10f8d0416619f/USER'
-,'1p2To3p6':'/GEN_SIM_ATo2Tau_m1p2To3p6_pt30To300_v2/lpcml-crab_aToTauTau_Hadronic_m1p2To3p6_pt30To300_pythia8_GEN_SIM_v2-06bc6119e68a2617a0c0118b8fcb3a32/USER'
+'3p6To18':'/GEN_SIM_ATo2Tau_m3p6To18_pt30To300/lpcml-crab_aToTauTau_Hadronic_m3p6To18_pt30To300_pythia8_GEN_SIM-c69efe833fac3615f1b10f8d0416619f/USER'
+,'1p2To3p6':''
 }.get(Mass_tag, None)
 
-
-# config.Data.userInputFiles = open(f'list_files_GEN_SIM_ATo2Tau_{Mass_tag}_pt30To300.txt').readlines()
-config.Data.outputPrimaryDataset = 'HLT_Pielup_ATo4Tau_Hadronic_%s'%Mass_tag
 
 config.Data.inputDataset = dataset
 config.Data.splitting      = 'FileBased'
