@@ -1,0 +1,8 @@
+<tool name="xtensor" version="0.24.1-0d2ecea7a15c3b14a11b33698e6fd31e">
+  <info url="https://github.com/QuantStack/xtensor"/>
+  <client>
+    <environment name="XTENSOR_BASE" default="/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/xtensor/0.24.1-0d2ecea7a15c3b14a11b33698e6fd31e"/>
+    <environment name="INCLUDE" default="$XTENSOR_BASE/include"/>
+  </client>
+  <use name="xtl"/>
+</tool>

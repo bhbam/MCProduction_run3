@@ -1,0 +1,13 @@
+{
+  "RUNTIME": {
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/sloccount/2.26-9d62e43b370a1255bf3015f202d352b5/bin"
+    ]
+  },
+  "SLOCCOUNT_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/sloccount/2.26-9d62e43b370a1255bf3015f202d352b5",
+  "TOOLNAME": "sloccount",
+  "TOOLVERSION": "2.26-9d62e43b370a1255bf3015f202d352b5",
+  "VARIABLES": [
+    "SLOCCOUNT_BASE"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "RUNTIME": {
+    "XRDCL_RECORDER_PLUGIN": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/xrdcl-record/5.4.2-ee59fbe27fbe3d40a7c64e066c269157/lib64/libXrdClRecorder-5.so"
+    ]
+  },
+  "TOOLNAME": "xrdcl-record",
+  "TOOLVERSION": "5.4.2-ee59fbe27fbe3d40a7c64e066c269157",
+  "VARIABLES": [
+    "XRDCL_RECORD_BASE"
+  ],
+  "XRDCL_RECORD_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/xrdcl-record/5.4.2-ee59fbe27fbe3d40a7c64e066c269157"
+}

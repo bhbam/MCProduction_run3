@@ -1,0 +1,13 @@
+{
+  "PY3_CORRECTIONLIB_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/py3-correctionlib/2.1.0-6eee070cdfb1c2069b2eeef24747c809",
+  "RUNTIME": {
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/py3-correctionlib/2.1.0-6eee070cdfb1c2069b2eeef24747c809/bin"
+    ]
+  },
+  "TOOLNAME": "py3-correctionlib",
+  "TOOLVERSION": "2.1.0-6eee070cdfb1c2069b2eeef24747c809",
+  "VARIABLES": [
+    "PY3_CORRECTIONLIB_BASE"
+  ]
+}

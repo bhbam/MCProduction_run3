@@ -1,0 +1,109 @@
+
++CRAB_ReqName = "250122_040201:bhbam_crab_aToTau_Hadronic_m1p8To3p6_pt30To300_pythia8_GEN_SIM_v1"
++CRAB_Workflow = "250122_040201:bhbam_crab_aToTau_Hadronic_m1p8To3p6_pt30To300_pythia8_GEN_SIM_v1"
++CMS_JobType = "Analysis"
++CRAB_JobSW = "CMSSW_13_0_17"
++CRAB_JobArch = "el8_amd64_gcc11"
++CRAB_DBSURL = "https://cmsweb.cern.ch/dbs/prod/global/DBSReader"
++CRAB_PostJobStatus = "NOT RUN"
++CRAB_PostJobLastUpdate = 0
++CRAB_PublishName = "crab_aToTau_Hadronic_m1p8To3p6_pt30To300_pythia8_GEN_SIM_v1-00000000000000000000000000000000"
++CRAB_Publish = 1
++CRAB_PublishDBSURL = "https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter"
++CRAB_ISB = "https://cmsweb.cern.ch/S3/crabcache_prod"
++CRAB_AdditionalOutputFiles = {}
++CRAB_EDMOutputFiles = {"aToTau_m1p8To3p6_pt30To300_GEN.root"}
++CRAB_TFileOutputFiles = {}
++CRAB_UserDN = "/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bhbam/CN=844790/CN=Bhim Bahadur Bam"
++CRAB_UserHN = "bhbam"
++CRAB_AsyncDest = "T3_US_FNALLPC"
++CRAB_StageoutPolicy = "local,remote"
++CRAB_UserRole = undefined
++CRAB_UserGroup = undefined
++CRAB_TaskWorker = "crab-prod-tw01"
++CRAB_RetryOnASOFailures = 1
++CRAB_ASOTimeout = 86400
++CRAB_RestHost = "cmsweb.cern.ch:8443"
++CRAB_DbInstance = "prod"
++CRAB_NumAutomJobRetries = 2
+CRAB_Attempt = 0
+CRAB_ISB = https://cmsweb.cern.ch/S3/crabcache_prod
+CRAB_AdditionalOutputFiles = {}
+CRAB_JobSW = CMSSW_13_0_17
+CRAB_JobArch = el8_amd64_gcc11
+CRAB_Archive = sandbox.tar.gz
+CRAB_Id = $(count)
++CRAB_Id = "$(count)"
++CRAB_JobCount = 1500
++CRAB_OutTempLFNDir = "/store/temp/user/bhbam.6973d2f65a0e6bd0647511d2d8fea6d0635c9847/lpcml/bbbam/MCGeneration_run3/GEN_SIM_AToTau_m1p8To3p6_pt30To300/crab_aToTau_Hadronic_m1p8To3p6_pt30To300_pythia8_GEN_SIM_v1/250122_040201"
++CRAB_OutLFNDir = "/store/group/lpcml/bbbam/MCGeneration_run3/GEN_SIM_AToTau_m1p8To3p6_pt30To300/crab_aToTau_Hadronic_m1p8To3p6_pt30To300_pythia8_GEN_SIM_v1/250122_040201"
++CRAB_oneEventMode = 0
++CRAB_PrimaryDataset = "GEN_SIM_AToTau_m1p8To3p6_pt30To300"
++CRAB_DAGType = "Job"
+accounting_group = analysis
+accounting_group_user = bhbam
++CRAB_SubmitterIpAddr = "137.138.154.184"
++CRAB_TaskLifetimeDays = 30
++CRAB_TaskEndTime = 1740110556
++CRAB_SplitAlgo =  "EventBased"
++CRAB_AlgoArgs = "{\"halt_job_on_file_boundaries\": false, \"splitOnRun\": false, \"events_per_job\": {\"halt_job_on_file_boundaries\": false, \"splitOnRun\": false, \"events_per_job\": 2000, \"runs\": [], \"lumis\": [], \"algorithm\": \"EventBased\", \"events_per_lumi\": 500, \"applyLumiCorrection\": true}}"
++CMS_WMTool = "User"
++CMS_TaskType = "cmsRun"
++CMS_SubmissionTool = "CRAB"
++CMS_Type = "Analysis"
+
+
+# These attributes help gWMS decide what platforms this job can run on; see https://twiki.cern.ch/twiki/bin/view/CMSPublic/CompOpsMatchArchitecture
++REQUIRED_ARCH = "X86_64"
++REQUIRED_MINIMUM_MICROARCH = "2"
++DESIRED_CMSDataset = undefined
+
++JOBGLIDEIN_CMSSite = "$$([ifThenElse(GLIDEIN_CMSSite is undefined, \"Unknown\", GLIDEIN_CMSSite)])"
+job_ad_information_attrs = MATCH_EXP_JOBGLIDEIN_CMSSite, JOBGLIDEIN_CMSSite, RemoteSysCpu, RemoteUserCpu
+
+# Recover job output and logs on eviction events; make sure they aren't spooled
+# This requires 8.1.6 or later (https://htcondor-wiki.cs.wisc.edu/index.cgi/tktview?tn=4292)
+# This allows us to return stdout to users when they hit memory limits (which triggers PeriodicRemove).
+WhenToTransferOutput = ON_EXIT_OR_EVICT
++SpoolOnEvict = false
+
+# Keep job in the queue upon completion long enough for the postJob to run,
+# allowing the monitoring script to fetch the postJob status and job exit-code updated by the postJob
+LeaveJobInQueue = ifThenElse((JobStatus=?=4 || JobStatus=?=3) && (time() - EnteredCurrentStatus < 30 * 60*60), true, false)
+
+universe = vanilla
+Executable = gWMS-CMSRunAnalysis.sh
+Output = job_out.$(CRAB_Id)
+Error = job_err.$(CRAB_Id)
+Log = job_log
+# args changed...
+
+Arguments = "-a $(CRAB_Archive) --sourceURL=$(CRAB_ISB) --jobNumber=$(CRAB_Id) --cmsswVersion=$(CRAB_JobSW) --scramArch=$(CRAB_JobArch) '--inputFile=$(inputFiles)' '--runAndLumis=$(runAndLumiMask)' --lheInputFiles=$(lheInputFiles) --firstEvent=$(firstEvent) --firstLumi=$(firstLumi) --lastEvent=$(lastEvent) --firstRun=$(firstRun) --seeding=$(seeding) --scriptExe=$(scriptExe) --eventsPerLumi=$(eventsPerLumi) --maxRuntime=$(maxRuntime) '--scriptArgs=$(scriptArgs)' -o $(CRAB_AdditionalOutputFiles)"
+
+transfer_input_files = CMSRunAnalysis.sh, cmscp.py, CMSRunAnalysis.tar.gz, sandbox.tar.gz, run_and_lumis.tar.gz, input_files.tar.gz, submit_env.sh, cmscp.sh
+transfer_output_files = jobReport.json.$(count), WMArchiveReport.json.$(count)
+# make sure coredump (if any) is not added to output files ref: https://lists.cs.wisc.edu/archive/htcondor-users/2022-September/msg00052.shtml
+coresize = 0
+# TODO: fold this into the config file instead of hardcoding things.
+Environment = "SCRAM_ARCH=$(CRAB_JobArch) CRAB_RUNTIME_TARBALL=local CRAB_TASKMANAGER_TARBALL=local"
+should_transfer_files = YES
+#x509userproxy = 2c7f48f4f6c6de0d1828f88616c547d1fc5c0274
+use_x509userproxy = true
++REQUIRED_OS="rhel8"
+Requirements = stringListMember(TARGET.Arch, REQUIRED_ARCH)
+# Ref: https://htcondor.readthedocs.io/en/latest/classad-attributes/job-classad-attributes.html#HoldReasonCode
+periodic_release = (HoldReasonCode == 28) || (HoldReasonCode == 30) || (HoldReasonCode == 13) || (HoldReasonCode == 6)
+# Remove if
+# a) job is in the 'held' status for more than 7 minutes
+# b) job is idle more than 7 days
+# c) job is running and one of:
+#    1) Over memory use
+#    2) Over wall clock limit
+#    3) Over disk usage of N GB, which is set in ServerUtilities
+# d) job is idle and users proxy expired 1 day ago. (P.S. why 1 day ago? because there is recurring action which is updating user proxy and lifetime.)
+# == If New periodic remove expression is added, also it should have Periodic Remove Reason. Otherwise message will not be clear and it is hard to debug
+periodic_remove = ((JobStatus =?= 5) && (time() - EnteredCurrentStatus > 7*60)) ||                   ((JobStatus =?= 1) && (time() - EnteredCurrentStatus > 7*24*60*60)) ||                   ((JobStatus =?= 2) && (                      (MemoryUsage =!= UNDEFINED && MemoryUsage > RequestMemory) ||                      (MaxWallTimeMinsRun*60 < time() - EnteredCurrentStatus) ||                      (DiskUsage > 20000000))) ||                      (time() > CRAB_TaskEndTime) ||                   ((JobStatus =?= 1) && (time() > (x509UserProxyExpiration + 86400)))
++PeriodicRemoveReason = ifThenElse(time() - EnteredCurrentStatus > 7*24*60*60 && isUndefined(MemoryUsage), "Removed due to idle time limit",                           ifThenElse(time() > x509UserProxyExpiration, "Removed job due to proxy expiration",                             ifThenElse(MemoryUsage > RequestMemory, "Removed due to memory use",                               ifThenElse(MaxWallTimeMinsRun*60 < time() - EnteredCurrentStatus, "Removed due to wall clock limit",                                 ifThenElse(DiskUsage >  20000000, "Removed due to disk usage",                                   ifThenElse(time() > CRAB_TaskEndTime, "Removed due to reached CRAB_TaskEndTime",                                   "Removed due to job being held"))))))
+
+
+queue

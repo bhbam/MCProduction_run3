@@ -1,0 +1,6 @@
+<tool name="py3-tensorboard" version="2.10.0-58a77aac84bb2178541e61a8528534a2">
+  <client>
+    <environment name="PY3_TENSORBOARD_BASE" default="/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/py3-tensorboard/2.10.0-58a77aac84bb2178541e61a8528534a2"/>
+  </client>
+  <runtime name="PATH" value="$PY3_TENSORBOARD_BASE/bin" type="path"/>
+</tool>

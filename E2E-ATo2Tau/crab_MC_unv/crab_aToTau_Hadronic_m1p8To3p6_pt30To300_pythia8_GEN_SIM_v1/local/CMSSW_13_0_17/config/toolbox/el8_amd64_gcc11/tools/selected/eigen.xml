@@ -1,0 +1,9 @@
+<tool name="eigen" version="82dd3710dac619448f50331c1d6a35da673f764a-b0dc243d10365424e66e60c822ab818e">
+  <client>
+    <environment name="EIGEN_BASE"   default="/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/eigen/82dd3710dac619448f50331c1d6a35da673f764a-b0dc243d10365424e66e60c822ab818e"/>
+    <environment name="INCLUDE"      default="$EIGEN_BASE/include/eigen3"/>
+  </client>
+  <runtime name="ROOT_INCLUDE_PATH"  value="$INCLUDE" type="path"/>
+  <flags CPPDEFINES="EIGEN_DONT_PARALLELIZE"/>
+  <flags CUDA_FLAGS="--diag-suppress 20014"/>
+</tool>

@@ -1,0 +1,8 @@
+<tool name="xpmem" version="v2.6.3-20220308-c7ef3156e39fc015b98dfdf5c149683b">
+  <lib name="xpmem"/>
+  <client>
+    <environment name="XPMEM_BASE" default="/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/xpmem/v2.6.3-20220308-c7ef3156e39fc015b98dfdf5c149683b"/>
+    <environment name="INCLUDE"    default="$XPMEM_BASE/include"/>
+    <environment name="LIBDIR"     default="$XPMEM_BASE/lib"/>
+  </client>
+</tool>

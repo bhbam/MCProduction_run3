@@ -1,0 +1,6 @@
+<tool name="py3-pkginfo" version="1.8.3-74be87dbac2cf8354a54993d02dba388">
+  <client>
+    <environment name="PY3_PKGINFO_BASE" default="/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/py3-pkginfo/1.8.3-74be87dbac2cf8354a54993d02dba388"/>
+  </client>
+  <runtime name="PATH" value="$PY3_PKGINFO_BASE/bin" type="path"/>
+</tool>

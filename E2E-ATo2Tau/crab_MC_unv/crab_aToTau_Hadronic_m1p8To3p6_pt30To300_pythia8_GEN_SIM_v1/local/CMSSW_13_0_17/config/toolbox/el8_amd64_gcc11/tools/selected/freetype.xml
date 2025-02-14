@@ -1,0 +1,10 @@
+<tool name="freetype" version="2.10.0-7c6fc6af284a6e94f5e435c9ea3767b9">
+  <lib name="freetype-cms"/>
+  <client>
+    <environment name="FREETYPE_BASE" default="/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/freetype/2.10.0-7c6fc6af284a6e94f5e435c9ea3767b9"/>
+    <environment name="INCLUDE"      default="$FREETYPE_BASE/include"/>
+    <environment name="LIBDIR"       default="$FREETYPE_BASE/lib"/>
+  </client>
+  <runtime name="ROOT_INCLUDE_PATH" value="$INCLUDE" type="path"/>
+  <use name="root_cxxdefaults"/>
+</tool>

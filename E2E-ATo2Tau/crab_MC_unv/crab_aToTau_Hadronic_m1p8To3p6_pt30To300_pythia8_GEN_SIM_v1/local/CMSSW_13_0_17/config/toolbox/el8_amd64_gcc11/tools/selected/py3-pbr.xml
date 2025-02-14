@@ -1,0 +1,6 @@
+<tool name="py3-pbr" version="5.10.0-c1323923f9cc69f0964baa98be6deacc">
+  <client>
+    <environment name="PY3_PBR_BASE" default="/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/py3-pbr/5.10.0-c1323923f9cc69f0964baa98be6deacc"/>
+  </client>
+  <runtime name="PATH" value="$PY3_PBR_BASE/bin" type="path"/>
+</tool>

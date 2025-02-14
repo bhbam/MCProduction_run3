@@ -1,0 +1,14 @@
+<tool name="opencv" version="4.5.5-fdbfe5ac2bc062e7c614726fa3ea2c29">
+  <lib name="opencv_core"/>
+  <client>
+    <environment name="OPENCV_BASE" default="/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/opencv/4.5.5-fdbfe5ac2bc062e7c614726fa3ea2c29"/>
+    <environment name="INCLUDE" default="$OPENCV_BASE/include"/>
+    <environment name="LIBDIR" default="$OPENCV_BASE/lib"/>
+    <environment name="BINDIR" default="$OPENCV_BASE/bin"/>
+  </client>
+  <use name="libpng"/>
+  <use name="libjpeg-turbo"/>
+  <use name="zlib"/>
+  <use name="eigen"/>
+  <use name="OpenBLAS"/>
+</tool>

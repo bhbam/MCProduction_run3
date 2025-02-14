@@ -1,0 +1,20 @@
+{
+  "LIB": [
+    "nppial",
+    "nppicc",
+    "nppidei",
+    "nppif",
+    "nppig",
+    "nppim",
+    "nppist",
+    "nppisu",
+    "nppitc",
+    "npps",
+    "nppc"
+  ],
+  "TOOLNAME": "cuda-npp",
+  "TOOLVERSION": "11.5.2-66a9473808e7d5863d5bbec0824e2c4a",
+  "USE": [
+    "cuda"
+  ]
+}

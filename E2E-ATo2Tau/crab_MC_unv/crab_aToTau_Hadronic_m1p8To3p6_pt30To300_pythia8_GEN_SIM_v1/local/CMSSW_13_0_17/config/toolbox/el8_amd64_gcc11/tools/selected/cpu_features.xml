@@ -1,0 +1,11 @@
+<tool name="cpu_features" version="0.7.0-d3b13cbc2a9c6f5528dcc3226634c43d">
+  <info url="https://github.com/google/cpu_features"/>
+  <lib name="cpu_features"/>
+  <client>
+    <environment name="CPU_FEATURES_BASE" default="/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/cpu_features/0.7.0-d3b13cbc2a9c6f5528dcc3226634c43d"/>
+    <environment name="LIBDIR" default="$CPU_FEATURES_BASE/lib64"/>
+    <environment name="INCLUDE" default="$CPU_FEATURES_BASE/include"/>
+    <environment name="BINDIR" default="$CPU_FEATURES_BASE/bin"/>
+  </client>
+  <runtime name="PATH" value="$BINDIR" type="path"/>
+</tool>

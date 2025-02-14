@@ -1,0 +1,10 @@
+<tool name="hwloc" version="2.9.0-bef9c5456e9c1a1b3d71bcf07889b1b4">
+  <lib name="hwloc"/>
+  <client>
+    <environment name="HWLOC_BASE"  default="/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/hwloc/2.9.0-bef9c5456e9c1a1b3d71bcf07889b1b4"/>
+    <environment name="INCLUDE"     default="$HWLOC_BASE/include/hwloc"/>
+    <environment name="LIBDIR"      default="$HWLOC_BASE/lib"/>
+  </client>
+  <runtime name="PATH" value="$HWLOC_BASE/bin" type="path"/>
+  <runtime name="HWLOC_PLUGINS_PATH" value="$HWLOC_BASE/lib/hwloc" type="path"/>
+</tool>

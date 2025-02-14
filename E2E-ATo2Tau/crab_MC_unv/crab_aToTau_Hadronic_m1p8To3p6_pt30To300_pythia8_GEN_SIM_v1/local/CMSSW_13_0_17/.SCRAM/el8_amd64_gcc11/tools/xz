@@ -1,0 +1,30 @@
+{
+  "INCLUDE": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/xz/5.2.5-83d0a00b575efd1701e07bedf7977343/include"
+  ],
+  "LIB": [
+    "lzma"
+  ],
+  "LIBDIR": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/xz/5.2.5-83d0a00b575efd1701e07bedf7977343/lib"
+  ],
+  "RUNTIME": {
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/xz/5.2.5-83d0a00b575efd1701e07bedf7977343/bin"
+    ],
+    "PATH:ROOT_INCLUDE_PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/xz/5.2.5-83d0a00b575efd1701e07bedf7977343/include"
+    ]
+  },
+  "TOOLNAME": "xz",
+  "TOOLVERSION": "5.2.5-83d0a00b575efd1701e07bedf7977343",
+  "USE": [
+    "root_cxxdefaults"
+  ],
+  "VARIABLES": [
+    "XZ_BASE",
+    "LIBDIR",
+    "INCLUDE"
+  ],
+  "XZ_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/xz/5.2.5-83d0a00b575efd1701e07bedf7977343"
+}

@@ -1,0 +1,27 @@
+{
+  "FREETYPE_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/freetype/2.10.0-7c6fc6af284a6e94f5e435c9ea3767b9",
+  "INCLUDE": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/freetype/2.10.0-7c6fc6af284a6e94f5e435c9ea3767b9/include"
+  ],
+  "LIB": [
+    "freetype-cms"
+  ],
+  "LIBDIR": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/freetype/2.10.0-7c6fc6af284a6e94f5e435c9ea3767b9/lib"
+  ],
+  "RUNTIME": {
+    "PATH:ROOT_INCLUDE_PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/freetype/2.10.0-7c6fc6af284a6e94f5e435c9ea3767b9/include"
+    ]
+  },
+  "TOOLNAME": "freetype",
+  "TOOLVERSION": "2.10.0-7c6fc6af284a6e94f5e435c9ea3767b9",
+  "USE": [
+    "root_cxxdefaults"
+  ],
+  "VARIABLES": [
+    "FREETYPE_BASE",
+    "INCLUDE",
+    "LIBDIR"
+  ]
+}

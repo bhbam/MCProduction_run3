@@ -1,0 +1,14 @@
+<tool name="rootrflx" version="6.26.11-fec5b250e1cd56b91a094709de26e5b8">
+  <info url="http://root.cern.ch/root/"/>
+  <client>
+    <environment name="ROOTRFLX_BASE" default="/cvmfs/cms.cern.ch/el8_amd64_gcc11/lcg/root/6.26.11-fec5b250e1cd56b91a094709de26e5b8"/>
+  </client>
+  <ifarchitecture name="_amd64_">
+    <flags GENREFLEX_GCCXMLOPT="-m64"/>
+  </ifarchitecture>
+  <flags GENREFLEX_CPPFLAGS="-DCMS_DICT_IMPL -D_REENTRANT -DGNUSOURCE -D__STRICT_ANSI__"/>
+  <runtime name="GENREFLEX" value="$ROOTRFLX_BASE/bin/genreflex"/>
+  <flags OVERRIDABLE_FLAGS="GENREFLEX_CPPFLAGS"/>
+  <use name="root_interface"/>
+  <use name="rootcling"/>
+</tool>

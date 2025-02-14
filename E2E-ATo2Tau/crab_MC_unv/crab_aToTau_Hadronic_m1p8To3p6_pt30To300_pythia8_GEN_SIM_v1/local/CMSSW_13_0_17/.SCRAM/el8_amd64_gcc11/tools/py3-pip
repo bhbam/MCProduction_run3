@@ -1,0 +1,13 @@
+{
+  "PY3_PIP_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/py3-pip/22.2.2-884a23a16514320267ee7bedd24a7b58",
+  "RUNTIME": {
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/py3-pip/22.2.2-884a23a16514320267ee7bedd24a7b58/bin"
+    ]
+  },
+  "TOOLNAME": "py3-pip",
+  "TOOLVERSION": "22.2.2-884a23a16514320267ee7bedd24a7b58",
+  "VARIABLES": [
+    "PY3_PIP_BASE"
+  ]
+}

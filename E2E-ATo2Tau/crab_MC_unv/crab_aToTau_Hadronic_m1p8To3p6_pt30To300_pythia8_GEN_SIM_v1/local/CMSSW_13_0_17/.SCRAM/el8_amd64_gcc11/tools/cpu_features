@@ -1,0 +1,28 @@
+{
+  "BINDIR": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/cpu_features/0.7.0-d3b13cbc2a9c6f5528dcc3226634c43d/bin"
+  ],
+  "CPU_FEATURES_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/cpu_features/0.7.0-d3b13cbc2a9c6f5528dcc3226634c43d",
+  "INCLUDE": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/cpu_features/0.7.0-d3b13cbc2a9c6f5528dcc3226634c43d/include"
+  ],
+  "LIB": [
+    "cpu_features"
+  ],
+  "LIBDIR": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/cpu_features/0.7.0-d3b13cbc2a9c6f5528dcc3226634c43d/lib64"
+  ],
+  "RUNTIME": {
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/cpu_features/0.7.0-d3b13cbc2a9c6f5528dcc3226634c43d/bin"
+    ]
+  },
+  "TOOLNAME": "cpu_features",
+  "TOOLVERSION": "0.7.0-d3b13cbc2a9c6f5528dcc3226634c43d",
+  "VARIABLES": [
+    "CPU_FEATURES_BASE",
+    "LIBDIR",
+    "INCLUDE",
+    "BINDIR"
+  ]
+}

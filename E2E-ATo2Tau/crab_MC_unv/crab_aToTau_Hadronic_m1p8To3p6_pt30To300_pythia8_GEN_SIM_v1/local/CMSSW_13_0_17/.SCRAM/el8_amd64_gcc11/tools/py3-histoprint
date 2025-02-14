@@ -1,0 +1,13 @@
+{
+  "PY3_HISTOPRINT_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/py3-histoprint/2.4.0-0e262f344f749e79525698f8dab7aefc",
+  "RUNTIME": {
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/py3-histoprint/2.4.0-0e262f344f749e79525698f8dab7aefc/bin"
+    ]
+  },
+  "TOOLNAME": "py3-histoprint",
+  "TOOLVERSION": "2.4.0-0e262f344f749e79525698f8dab7aefc",
+  "VARIABLES": [
+    "PY3_HISTOPRINT_BASE"
+  ]
+}

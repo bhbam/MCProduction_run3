@@ -1,0 +1,6 @@
+<tool name="py3-isort" version="5.10.1-8a9d18db211ccbfebc2938f6ab65e63f">
+  <client>
+    <environment name="PY3_ISORT_BASE" default="/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/py3-isort/5.10.1-8a9d18db211ccbfebc2938f6ab65e63f"/>
+  </client>
+  <runtime name="PATH" value="$PY3_ISORT_BASE/bin" type="path"/>
+</tool>

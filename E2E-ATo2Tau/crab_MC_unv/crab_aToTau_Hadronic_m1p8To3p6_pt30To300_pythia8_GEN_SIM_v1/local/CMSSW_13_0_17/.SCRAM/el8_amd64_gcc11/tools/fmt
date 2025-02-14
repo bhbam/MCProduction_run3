@@ -1,0 +1,24 @@
+{
+  "FMT_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/fmt/8.0.1-557ae4739f3cbc76e428d57162bae99b",
+  "INCLUDE": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/fmt/8.0.1-557ae4739f3cbc76e428d57162bae99b/include"
+  ],
+  "LIB": [
+    "fmt"
+  ],
+  "LIBDIR": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/fmt/8.0.1-557ae4739f3cbc76e428d57162bae99b/lib"
+  ],
+  "RUNTIME": {
+    "PATH:ROOT_INCLUDE_PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/fmt/8.0.1-557ae4739f3cbc76e428d57162bae99b/include"
+    ]
+  },
+  "TOOLNAME": "fmt",
+  "TOOLVERSION": "8.0.1-557ae4739f3cbc76e428d57162bae99b",
+  "VARIABLES": [
+    "FMT_BASE",
+    "LIBDIR",
+    "INCLUDE"
+  ]
+}

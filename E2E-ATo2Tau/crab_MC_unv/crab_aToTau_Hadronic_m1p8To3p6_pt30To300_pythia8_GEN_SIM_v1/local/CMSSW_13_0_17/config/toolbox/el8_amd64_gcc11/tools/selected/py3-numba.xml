@@ -1,0 +1,6 @@
+<tool name="py3-numba" version="0.56.2-187dae60de0c9be66bd3284f448a207d">
+  <client>
+    <environment name="PY3_NUMBA_BASE" default="/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/py3-numba/0.56.2-187dae60de0c9be66bd3284f448a207d"/>
+  </client>
+  <runtime name="PATH" value="$PY3_NUMBA_BASE/bin" type="path"/>
+</tool>

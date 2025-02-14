@@ -1,0 +1,13 @@
+{
+  "PY3_CYTHON_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/py3-cython/0.29.32-8878f3b47fcfe6fec63236017893f0a5",
+  "RUNTIME": {
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/py3-cython/0.29.32-8878f3b47fcfe6fec63236017893f0a5/bin"
+    ]
+  },
+  "TOOLNAME": "py3-cython",
+  "TOOLVERSION": "0.29.32-8878f3b47fcfe6fec63236017893f0a5",
+  "VARIABLES": [
+    "PY3_CYTHON_BASE"
+  ]
+}

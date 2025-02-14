@@ -1,0 +1,27 @@
+{
+  "INCLUDE": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/yoda/1.9.7-4151fd43e6befb0b6efa2ae8f7f2550b/include"
+  ],
+  "LIB": [
+    "YODA"
+  ],
+  "LIBDIR": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/yoda/1.9.7-4151fd43e6befb0b6efa2ae8f7f2550b/lib"
+  ],
+  "RUNTIME": {
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/yoda/1.9.7-4151fd43e6befb0b6efa2ae8f7f2550b/bin"
+    ]
+  },
+  "TOOLNAME": "yoda",
+  "TOOLVERSION": "1.9.7-4151fd43e6befb0b6efa2ae8f7f2550b",
+  "USE": [
+    "root_cxxdefaults"
+  ],
+  "VARIABLES": [
+    "YODA_BASE",
+    "LIBDIR",
+    "INCLUDE"
+  ],
+  "YODA_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/yoda/1.9.7-4151fd43e6befb0b6efa2ae8f7f2550b"
+}

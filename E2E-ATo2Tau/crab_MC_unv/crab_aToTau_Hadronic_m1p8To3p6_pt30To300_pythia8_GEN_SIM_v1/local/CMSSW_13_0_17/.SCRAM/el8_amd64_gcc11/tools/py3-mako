@@ -1,0 +1,13 @@
+{
+  "PY3_MAKO_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/py3-Mako/1.2.2-d94135b92233bbd294f98da445f67d5a",
+  "RUNTIME": {
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/py3-Mako/1.2.2-d94135b92233bbd294f98da445f67d5a/bin"
+    ]
+  },
+  "TOOLNAME": "py3-mako",
+  "TOOLVERSION": "1.2.2-d94135b92233bbd294f98da445f67d5a",
+  "VARIABLES": [
+    "PY3_MAKO_BASE"
+  ]
+}

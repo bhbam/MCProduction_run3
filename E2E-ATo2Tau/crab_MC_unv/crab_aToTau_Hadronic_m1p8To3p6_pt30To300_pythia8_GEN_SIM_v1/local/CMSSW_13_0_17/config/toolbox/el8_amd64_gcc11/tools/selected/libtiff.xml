@@ -1,0 +1,13 @@
+<tool name="libtiff" version="4.0.10-379c6010fabb72a8b7d2ebca2df35c1d">
+  <info url="http://www.libtiff.org/"/>
+  <lib name="tiff"/>
+  <client>
+    <environment name="LIBTIFF_BASE" default="/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/libtiff/4.0.10-379c6010fabb72a8b7d2ebca2df35c1d"/>
+    <environment name="LIBDIR" default="$LIBTIFF_BASE/lib"/>
+    <environment name="INCLUDE" default="$LIBTIFF_BASE/include"/>
+  </client>
+  <runtime name="ROOT_INCLUDE_PATH" value="$INCLUDE" type="path"/>
+  <use name="root_cxxdefaults"/>
+  <use name="libjpeg-turbo"/>
+  <use name="zlib"/>
+</tool>

@@ -1,0 +1,13 @@
+{
+  "GLIMPSE_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/glimpse/4.18.7-6-ae496a37cf8f35e13a8b8fceb6d9d076",
+  "RUNTIME": {
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/glimpse/4.18.7-6-ae496a37cf8f35e13a8b8fceb6d9d076/bin"
+    ]
+  },
+  "TOOLNAME": "glimpse",
+  "TOOLVERSION": "4.18.7-6-ae496a37cf8f35e13a8b8fceb6d9d076",
+  "VARIABLES": [
+    "GLIMPSE_BASE"
+  ]
+}

@@ -1,0 +1,5 @@
+<tool name="rootrio" version="6.26.11-fec5b250e1cd56b91a094709de26e5b8">
+  <info url="http://root.cern.ch/root/"/>
+  <lib name="RIO"/>
+  <use name="rootcling"/>
+</tool>

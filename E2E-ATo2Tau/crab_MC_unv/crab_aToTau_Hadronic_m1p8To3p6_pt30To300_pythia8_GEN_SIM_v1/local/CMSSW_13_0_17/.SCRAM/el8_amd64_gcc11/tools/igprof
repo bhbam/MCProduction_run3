@@ -1,0 +1,17 @@
+{
+  "IGPROF_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/igprof/5.9.16-2e8b6178ec5f18546803f8142134e39b",
+  "LIBDIR": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/igprof/5.9.16-2e8b6178ec5f18546803f8142134e39b/lib"
+  ],
+  "RUNTIME": {
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/igprof/5.9.16-2e8b6178ec5f18546803f8142134e39b/bin"
+    ]
+  },
+  "TOOLNAME": "igprof",
+  "TOOLVERSION": "5.9.16-2e8b6178ec5f18546803f8142134e39b",
+  "VARIABLES": [
+    "IGPROF_BASE",
+    "LIBDIR"
+  ]
+}

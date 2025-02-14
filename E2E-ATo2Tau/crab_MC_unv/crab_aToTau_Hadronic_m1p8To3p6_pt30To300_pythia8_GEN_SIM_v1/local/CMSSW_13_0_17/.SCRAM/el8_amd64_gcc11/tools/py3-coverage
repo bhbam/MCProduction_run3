@@ -1,0 +1,13 @@
+{
+  "PY3_COVERAGE_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/py3-coverage/6.4.4-4f6ec4240ca749c0df0e393d50c8de99",
+  "RUNTIME": {
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/py3-coverage/6.4.4-4f6ec4240ca749c0df0e393d50c8de99/bin"
+    ]
+  },
+  "TOOLNAME": "py3-coverage",
+  "TOOLVERSION": "6.4.4-4f6ec4240ca749c0df0e393d50c8de99",
+  "VARIABLES": [
+    "PY3_COVERAGE_BASE"
+  ]
+}

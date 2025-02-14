@@ -1,0 +1,6 @@
+<tool name="py3-nbformat" version="5.4.0-cc8352f19cc757e6bacb72310b9e547c">
+  <client>
+    <environment name="PY3_NBFORMAT_BASE" default="/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/py3-nbformat/5.4.0-cc8352f19cc757e6bacb72310b9e547c"/>
+  </client>
+  <runtime name="PATH" value="$PY3_NBFORMAT_BASE/bin" type="path"/>
+</tool>

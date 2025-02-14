@@ -1,0 +1,28 @@
+{
+  "INCLUDE": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/libpng/1.6.37-a2ff0f76300cbef7e51b77d816ff554a/include"
+  ],
+  "LIB": [
+    "png"
+  ],
+  "LIBDIR": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/libpng/1.6.37-a2ff0f76300cbef7e51b77d816ff554a/lib"
+  ],
+  "LIBPNG_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/libpng/1.6.37-a2ff0f76300cbef7e51b77d816ff554a",
+  "RUNTIME": {
+    "PATH:ROOT_INCLUDE_PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/libpng/1.6.37-a2ff0f76300cbef7e51b77d816ff554a/include"
+    ]
+  },
+  "TOOLNAME": "libpng",
+  "TOOLVERSION": "1.6.37-a2ff0f76300cbef7e51b77d816ff554a",
+  "USE": [
+    "root_cxxdefaults",
+    "zlib"
+  ],
+  "VARIABLES": [
+    "LIBPNG_BASE",
+    "LIBDIR",
+    "INCLUDE"
+  ]
+}

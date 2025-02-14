@@ -1,0 +1,13 @@
+{
+  "PY3_PYTEST_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/py3-pytest/7.1.3-902a9a85ec5816b9572edcb42704d237",
+  "RUNTIME": {
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/py3-pytest/7.1.3-902a9a85ec5816b9572edcb42704d237/bin"
+    ]
+  },
+  "TOOLNAME": "py3-pytest",
+  "TOOLVERSION": "7.1.3-902a9a85ec5816b9572edcb42704d237",
+  "VARIABLES": [
+    "PY3_PYTEST_BASE"
+  ]
+}

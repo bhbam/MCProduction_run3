@@ -1,0 +1,19 @@
+{
+  "C_ARES_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/c-ares/1.15.0-240b8214961b58570acaa99c86e8da7d",
+  "INCLUDE": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/c-ares/1.15.0-240b8214961b58570acaa99c86e8da7d/include"
+  ],
+  "LIB": [
+    "cares"
+  ],
+  "LIBDIR": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/c-ares/1.15.0-240b8214961b58570acaa99c86e8da7d/lib"
+  ],
+  "TOOLNAME": "c-ares",
+  "TOOLVERSION": "1.15.0-240b8214961b58570acaa99c86e8da7d",
+  "VARIABLES": [
+    "C_ARES_BASE",
+    "LIBDIR",
+    "INCLUDE"
+  ]
+}

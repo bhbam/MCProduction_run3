@@ -1,0 +1,30 @@
+{
+  "BINDIR": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/opencv/4.5.5-fdbfe5ac2bc062e7c614726fa3ea2c29/bin"
+  ],
+  "INCLUDE": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/opencv/4.5.5-fdbfe5ac2bc062e7c614726fa3ea2c29/include"
+  ],
+  "LIB": [
+    "opencv_core"
+  ],
+  "LIBDIR": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/opencv/4.5.5-fdbfe5ac2bc062e7c614726fa3ea2c29/lib"
+  ],
+  "OPENCV_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/opencv/4.5.5-fdbfe5ac2bc062e7c614726fa3ea2c29",
+  "TOOLNAME": "opencv",
+  "TOOLVERSION": "4.5.5-fdbfe5ac2bc062e7c614726fa3ea2c29",
+  "USE": [
+    "libpng",
+    "libjpeg-turbo",
+    "zlib",
+    "eigen",
+    "openblas"
+  ],
+  "VARIABLES": [
+    "OPENCV_BASE",
+    "INCLUDE",
+    "LIBDIR",
+    "BINDIR"
+  ]
+}

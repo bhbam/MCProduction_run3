@@ -1,0 +1,29 @@
+{
+  "INCLUDE": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/python3/3.9.14-76a14295dd5255228210eb596893b98c/include/python3.9"
+  ],
+  "LIB": [
+    "python3.9"
+  ],
+  "LIBDIR": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/python3/3.9.14-76a14295dd5255228210eb596893b98c/lib"
+  ],
+  "PYTHON3_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/python3/3.9.14-76a14295dd5255228210eb596893b98c",
+  "PYTHON3_COMPILE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/python3/3.9.14-76a14295dd5255228210eb596893b98c/lib/python3.9/compileall.py",
+  "RUNTIME": {
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/python3/3.9.14-76a14295dd5255228210eb596893b98c/bin"
+    ]
+  },
+  "TOOLNAME": "python3",
+  "TOOLVERSION": "3.9.14-76a14295dd5255228210eb596893b98c",
+  "USE": [
+    "sockets"
+  ],
+  "VARIABLES": [
+    "PYTHON3_BASE",
+    "LIBDIR",
+    "INCLUDE",
+    "PYTHON3_COMPILE"
+  ]
+}

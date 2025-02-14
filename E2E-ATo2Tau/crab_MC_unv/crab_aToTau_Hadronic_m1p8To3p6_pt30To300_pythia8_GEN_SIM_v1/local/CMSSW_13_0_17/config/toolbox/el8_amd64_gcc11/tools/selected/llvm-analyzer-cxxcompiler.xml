@@ -1,0 +1,7 @@
+  <tool name="llvm-analyzer-cxxcompiler" version="12.0.1-476112d9475f69ecba350f77e3ec4975" type="compiler">
+    <use name="llvm-cxxcompiler"/>
+    <client>
+      <environment name="LLVM_ANALYZER_CXXCOMPILER_BASE" default="/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/llvm/12.0.1-476112d9475f69ecba350f77e3ec4975"/>
+      <environment name="CXX" value="$LLVM_ANALYZER_CXXCOMPILER_BASE/bin/c++-analyzer"/>
+    </client>
+  </tool>

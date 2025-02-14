@@ -1,0 +1,156 @@
+{
+  "FLAGS": {
+    "ALPAKA_BACKENDS": [
+      "cuda",
+      "rocm",
+      "serial"
+    ],
+    "CHECK_PRIVATE_HEADERS": [
+      "1"
+    ],
+    "CODE_CHECK_ALPAKA_BACKEND": [
+      "serial"
+    ],
+    "DEFAULT_COMPILER": [
+      "gcc"
+    ],
+    "ENABLE_LTO": [
+      "1"
+    ],
+    "ENABLE_PGO": [
+      "0"
+    ],
+    "EXTERNAL_SYMLINK": [
+      "PATH",
+      "LIBDIR",
+      "CMSSW_SEARCH_PATH"
+    ],
+    "LLVM_ANALYZER": [
+      "llvm-analyzer"
+    ],
+    "NO_EXTERNAL_RUNTIME": [
+      "LD_LIBRARY_PATH",
+      "PATH",
+      "CMSSW_SEARCH_PATH"
+    ],
+    "OVERRIDABLE_FLAGS": [
+      "CPPDEFINES",
+      "CXXFLAGS",
+      "FFLAGS",
+      "CFLAGS",
+      "CPPFLAGS",
+      "LDFLAGS",
+      "CUDA_FLAGS",
+      "CUDA_LDFLAGS",
+      "LTO_FLAGS",
+      "PGO_FLAGS",
+      "ROCM_FLAGS",
+      "ROCM_LDFLAGS"
+    ],
+    "SCRAM_TARGETS": [
+      "haswell",
+      "sandybridge",
+      "nehalem"
+    ],
+    "SKIP_TOOLS_SYMLINK": [
+      "cxxcompiler",
+      "ccompiler",
+      "f77compiler",
+      "gcc-cxxcompiler",
+      "gcc-ccompiler",
+      "gcc-f77compiler",
+      "llvm-cxxcompiler",
+      "llvm-ccompiler",
+      "llvm-f77compiler",
+      "llvm-analyzer-cxxcompiler",
+      "llvm-analyzer-ccompiler",
+      "icc-cxxcompiler",
+      "icc-ccompiler",
+      "icc-f77compiler",
+      "x11",
+      "dpm"
+    ],
+    "SYMLINK_DEPTH_CMSSW_SEARCH_PATH": [
+      "2"
+    ]
+  },
+  "INCLUDE": [
+    "/uscms_data/d3/bbbam/analysis_run3/MCGeneration/CMSSW_13_0_17/src/MCProduction_run3/E2E-ATo2Tau/crab_MC_unv/crab_aToTau_Hadronic_m1p8To3p6_pt30To300_pythia8_GEN_SIM_v1/local/CMSSW_13_0_17/src",
+    "/uscms_data/d3/bbbam/analysis_run3/MCGeneration/CMSSW_13_0_17/src/MCProduction_run3/E2E-ATo2Tau/crab_MC_unv/crab_aToTau_Hadronic_m1p8To3p6_pt30To300_pythia8_GEN_SIM_v1/local/CMSSW_13_0_17/include/el8_amd64_gcc11/src",
+    "/uscms_data/d3/bbbam/analysis_run3/MCGeneration/CMSSW_13_0_17/src/MCProduction_run3/E2E-ATo2Tau/crab_MC_unv/crab_aToTau_Hadronic_m1p8To3p6_pt30To300_pythia8_GEN_SIM_v1/local/CMSSW_13_0_17/include/LCG",
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/cms/cmssw/CMSSW_13_0_17/src"
+  ],
+  "LIBDIR": [
+    "/uscms_data/d3/bbbam/analysis_run3/MCGeneration/CMSSW_13_0_17/src/MCProduction_run3/E2E-ATo2Tau/crab_MC_unv/crab_aToTau_Hadronic_m1p8To3p6_pt30To300_pythia8_GEN_SIM_v1/local/CMSSW_13_0_17/biglib/el8_amd64_gcc11",
+    "/uscms_data/d3/bbbam/analysis_run3/MCGeneration/CMSSW_13_0_17/src/MCProduction_run3/E2E-ATo2Tau/crab_MC_unv/crab_aToTau_Hadronic_m1p8To3p6_pt30To300_pythia8_GEN_SIM_v1/local/CMSSW_13_0_17/lib/el8_amd64_gcc11",
+    "/uscms_data/d3/bbbam/analysis_run3/MCGeneration/CMSSW_13_0_17/src/MCProduction_run3/E2E-ATo2Tau/crab_MC_unv/crab_aToTau_Hadronic_m1p8To3p6_pt30To300_pythia8_GEN_SIM_v1/local/CMSSW_13_0_17/external/el8_amd64_gcc11/lib",
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/cms/cmssw/CMSSW_13_0_17/biglib/el8_amd64_gcc11",
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/cms/cmssw/CMSSW_13_0_17/lib/el8_amd64_gcc11",
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/cms/cmssw/CMSSW_13_0_17/external/el8_amd64_gcc11/lib"
+  ],
+  "RUNTIME": {
+    "CMSSW_BASE": [
+      "/uscms_data/d3/bbbam/analysis_run3/MCGeneration/CMSSW_13_0_17/src/MCProduction_run3/E2E-ATo2Tau/crab_MC_unv/crab_aToTau_Hadronic_m1p8To3p6_pt30To300_pythia8_GEN_SIM_v1/local/CMSSW_13_0_17"
+    ],
+    "CMSSW_GIT_HASH": [
+      "CMSSW_13_0_17"
+    ],
+    "CMSSW_RELEASE_BASE": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/cms/cmssw/CMSSW_13_0_17"
+    ],
+    "CMSSW_VERSION": [
+      "CMSSW_13_0_17"
+    ],
+    "LANG": [
+      "C"
+    ],
+    "LOCALRT": [
+      "/uscms_data/d3/bbbam/analysis_run3/MCGeneration/CMSSW_13_0_17/src/MCProduction_run3/E2E-ATo2Tau/crab_MC_unv/crab_aToTau_Hadronic_m1p8To3p6_pt30To300_pythia8_GEN_SIM_v1/local/CMSSW_13_0_17"
+    ],
+    "PATH:CMSSW_SEARCH_PATH": [
+      "/uscms_data/d3/bbbam/analysis_run3/MCGeneration/CMSSW_13_0_17/src/MCProduction_run3/E2E-ATo2Tau/crab_MC_unv/crab_aToTau_Hadronic_m1p8To3p6_pt30To300_pythia8_GEN_SIM_v1/local/CMSSW_13_0_17/poison",
+      "/uscms_data/d3/bbbam/analysis_run3/MCGeneration/CMSSW_13_0_17/src/MCProduction_run3/E2E-ATo2Tau/crab_MC_unv/crab_aToTau_Hadronic_m1p8To3p6_pt30To300_pythia8_GEN_SIM_v1/local/CMSSW_13_0_17/src",
+      "/uscms_data/d3/bbbam/analysis_run3/MCGeneration/CMSSW_13_0_17/src/MCProduction_run3/E2E-ATo2Tau/crab_MC_unv/crab_aToTau_Hadronic_m1p8To3p6_pt30To300_pythia8_GEN_SIM_v1/local/CMSSW_13_0_17/external/el8_amd64_gcc11/data",
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/cms/cmssw/CMSSW_13_0_17/src",
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/cms/cmssw/CMSSW_13_0_17/external/el8_amd64_gcc11/data"
+    ],
+    "PATH:LD_LIBRARY_PATH": [
+      "/uscms_data/d3/bbbam/analysis_run3/MCGeneration/CMSSW_13_0_17/src/MCProduction_run3/E2E-ATo2Tau/crab_MC_unv/crab_aToTau_Hadronic_m1p8To3p6_pt30To300_pythia8_GEN_SIM_v1/local/CMSSW_13_0_17/biglib/el8_amd64_gcc11",
+      "/uscms_data/d3/bbbam/analysis_run3/MCGeneration/CMSSW_13_0_17/src/MCProduction_run3/E2E-ATo2Tau/crab_MC_unv/crab_aToTau_Hadronic_m1p8To3p6_pt30To300_pythia8_GEN_SIM_v1/local/CMSSW_13_0_17/lib/el8_amd64_gcc11",
+      "/uscms_data/d3/bbbam/analysis_run3/MCGeneration/CMSSW_13_0_17/src/MCProduction_run3/E2E-ATo2Tau/crab_MC_unv/crab_aToTau_Hadronic_m1p8To3p6_pt30To300_pythia8_GEN_SIM_v1/local/CMSSW_13_0_17/external/el8_amd64_gcc11/lib",
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/cms/cmssw/CMSSW_13_0_17/biglib/el8_amd64_gcc11",
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/cms/cmssw/CMSSW_13_0_17/lib/el8_amd64_gcc11",
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/cms/cmssw/CMSSW_13_0_17/external/el8_amd64_gcc11/lib"
+    ],
+    "PATH:PATH": [
+      "/uscms_data/d3/bbbam/analysis_run3/MCGeneration/CMSSW_13_0_17/src/MCProduction_run3/E2E-ATo2Tau/crab_MC_unv/crab_aToTau_Hadronic_m1p8To3p6_pt30To300_pythia8_GEN_SIM_v1/local/CMSSW_13_0_17/bin/el8_amd64_gcc11",
+      "/uscms_data/d3/bbbam/analysis_run3/MCGeneration/CMSSW_13_0_17/src/MCProduction_run3/E2E-ATo2Tau/crab_MC_unv/crab_aToTau_Hadronic_m1p8To3p6_pt30To300_pythia8_GEN_SIM_v1/local/CMSSW_13_0_17/external/el8_amd64_gcc11/bin",
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/cms/cmssw/CMSSW_13_0_17/bin/el8_amd64_gcc11",
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/cms/cmssw/CMSSW_13_0_17/external/el8_amd64_gcc11/bin"
+    ],
+    "PATH:PYTHON3PATH": [
+      "/uscms_data/d3/bbbam/analysis_run3/MCGeneration/CMSSW_13_0_17/src/MCProduction_run3/E2E-ATo2Tau/crab_MC_unv/crab_aToTau_Hadronic_m1p8To3p6_pt30To300_pythia8_GEN_SIM_v1/local/CMSSW_13_0_17/python",
+      "/uscms_data/d3/bbbam/analysis_run3/MCGeneration/CMSSW_13_0_17/src/MCProduction_run3/E2E-ATo2Tau/crab_MC_unv/crab_aToTau_Hadronic_m1p8To3p6_pt30To300_pythia8_GEN_SIM_v1/local/CMSSW_13_0_17/lib/el8_amd64_gcc11",
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/cms/cmssw/CMSSW_13_0_17/python",
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/cms/cmssw/CMSSW_13_0_17/lib/el8_amd64_gcc11"
+    ],
+    "PATH:RIVET_ANALYSIS_PATH": [
+      "/uscms_data/d3/bbbam/analysis_run3/MCGeneration/CMSSW_13_0_17/src/MCProduction_run3/E2E-ATo2Tau/crab_MC_unv/crab_aToTau_Hadronic_m1p8To3p6_pt30To300_pythia8_GEN_SIM_v1/local/CMSSW_13_0_17/lib/el8_amd64_gcc11",
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/cms/cmssw/CMSSW_13_0_17/lib/el8_amd64_gcc11"
+    ],
+    "PATH:ROOT_INCLUDE_PATH": [
+      "/uscms_data/d3/bbbam/analysis_run3/MCGeneration/CMSSW_13_0_17/src/MCProduction_run3/E2E-ATo2Tau/crab_MC_unv/crab_aToTau_Hadronic_m1p8To3p6_pt30To300_pythia8_GEN_SIM_v1/local/CMSSW_13_0_17/src",
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/cms/cmssw/CMSSW_13_0_17/src"
+    ],
+    "PATH:TEST_SRTOPT_PATH": [
+      "/uscms_data/d3/bbbam/analysis_run3/MCGeneration/CMSSW_13_0_17/src/MCProduction_run3/E2E-ATo2Tau/crab_MC_unv/crab_aToTau_Hadronic_m1p8To3p6_pt30To300_pythia8_GEN_SIM_v1/local/CMSSW_13_0_17/test/el8_amd64_gcc11",
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/cms/cmssw/CMSSW_13_0_17/test/el8_amd64_gcc11"
+    ]
+  },
+  "TOOLNAME": "self",
+  "TOOLVERSION": "SELF",
+  "VARIABLES": [
+    "LIBDIR",
+    "INCLUDE"
+  ]
+}

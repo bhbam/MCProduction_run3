@@ -1,0 +1,11 @@
+<tool name="Hector" version="1.3.4_patch1-938487bfcffe2e713aa23525cb0ac1fe">
+  <info url="http://www.fynu.ucl.ac.be/themes/he/ggamma/hector/"/>
+  <lib name="Hector"/>
+  <client>
+    <environment name="HECTOR_BASE" default="/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/hector/1.3.4_patch1-938487bfcffe2e713aa23525cb0ac1fe"/>
+    <environment name="LIBDIR" default="$HECTOR_BASE/lib"/>
+    <environment name="INCLUDE" default="$HECTOR_BASE/include"/>
+  </client>
+  <runtime name="ROOT_INCLUDE_PATH" value="$INCLUDE" type="path"/>
+  <use name="root_cxxdefaults"/>
+</tool>

@@ -1,0 +1,31 @@
+{
+  "BINDIR": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/xgboost/1.6.2-e2fae94cab3f93f96bd60fb839a14344/bin"
+  ],
+  "INCLUDE": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/xgboost/1.6.2-e2fae94cab3f93f96bd60fb839a14344/include"
+  ],
+  "LIB": [
+    "xgboost"
+  ],
+  "LIBDIR": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/xgboost/1.6.2-e2fae94cab3f93f96bd60fb839a14344/lib64"
+  ],
+  "RUNTIME": {
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/xgboost/1.6.2-e2fae94cab3f93f96bd60fb839a14344/bin"
+    ],
+    "PATH:ROOT_INCLUDE_PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/xgboost/1.6.2-e2fae94cab3f93f96bd60fb839a14344/include"
+    ]
+  },
+  "TOOLNAME": "xgboost",
+  "TOOLVERSION": "1.6.2-e2fae94cab3f93f96bd60fb839a14344",
+  "VARIABLES": [
+    "XGBOOST_BASE",
+    "BINDIR",
+    "LIBDIR",
+    "INCLUDE"
+  ],
+  "XGBOOST_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/xgboost/1.6.2-e2fae94cab3f93f96bd60fb839a14344"
+}

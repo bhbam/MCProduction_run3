@@ -1,0 +1,16 @@
+{
+  "FLAGS": {
+    "CXXFLAGS": [
+      "-DALPAKA_ACC_CPU_B_TBB_T_SEQ_ENABLED"
+    ],
+    "GENREFLEX_CPPFLAGS": [
+      "-DALPAKA_ACC_CPU_B_TBB_T_SEQ_ENABLED"
+    ]
+  },
+  "TOOLNAME": "alpaka-tbb",
+  "TOOLVERSION": "develop-20230621-0e0add1a69915f1c9fab0fe26623c322",
+  "USE": [
+    "alpaka",
+    "tbb"
+  ]
+}

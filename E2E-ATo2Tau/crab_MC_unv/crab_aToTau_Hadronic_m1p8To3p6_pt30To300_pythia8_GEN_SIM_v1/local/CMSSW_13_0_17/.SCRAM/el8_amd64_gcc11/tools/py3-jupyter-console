@@ -1,0 +1,13 @@
+{
+  "PY3_JUPYTER_CONSOLE_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/py3-jupyter-console/6.4.4-bc697916d58ff69cc5e9cb8b634bf70e",
+  "RUNTIME": {
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/py3-jupyter-console/6.4.4-bc697916d58ff69cc5e9cb8b634bf70e/bin"
+    ]
+  },
+  "TOOLNAME": "py3-jupyter-console",
+  "TOOLVERSION": "6.4.4-bc697916d58ff69cc5e9cb8b634bf70e",
+  "VARIABLES": [
+    "PY3_JUPYTER_CONSOLE_BASE"
+  ]
+}

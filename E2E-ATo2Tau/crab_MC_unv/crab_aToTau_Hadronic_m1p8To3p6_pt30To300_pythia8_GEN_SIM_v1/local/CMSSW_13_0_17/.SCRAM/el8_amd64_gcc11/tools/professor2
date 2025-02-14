@@ -1,0 +1,23 @@
+{
+  "LIBDIR": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/professor2/2.3.3-15a13dc9d8aff32c67e6447716901b7e/lib"
+  ],
+  "PROFESSOR2_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/professor2/2.3.3-15a13dc9d8aff32c67e6447716901b7e",
+  "RUNTIME": {
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/professor2/2.3.3-15a13dc9d8aff32c67e6447716901b7e/bin"
+    ]
+  },
+  "TOOLNAME": "professor2",
+  "TOOLVERSION": "2.3.3-15a13dc9d8aff32c67e6447716901b7e",
+  "USE": [
+    "py3-numpy",
+    "root",
+    "yoda",
+    "eigen"
+  ],
+  "VARIABLES": [
+    "PROFESSOR2_BASE",
+    "LIBDIR"
+  ]
+}

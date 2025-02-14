@@ -1,0 +1,29 @@
+{
+  "CORAL_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/cms/coral/CORAL_2_3_21-0c6298d2d88b04357d1548a007ebd73c",
+  "INCLUDE": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/cms/coral/CORAL_2_3_21-0c6298d2d88b04357d1548a007ebd73c/include/LCG"
+  ],
+  "LIBDIR": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/cms/coral/CORAL_2_3_21-0c6298d2d88b04357d1548a007ebd73c/el8_amd64_gcc11/lib"
+  ],
+  "RUNTIME": {
+    "PATH:PYTHON3PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/cms/coral/CORAL_2_3_21-0c6298d2d88b04357d1548a007ebd73c/el8_amd64_gcc11/python",
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/cms/coral/CORAL_2_3_21-0c6298d2d88b04357d1548a007ebd73c/el8_amd64_gcc11/lib"
+    ],
+    "PATH:ROOT_INCLUDE_PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/cms/coral/CORAL_2_3_21-0c6298d2d88b04357d1548a007ebd73c/include/LCG"
+    ]
+  },
+  "SCRAM_PROJECT": 1,
+  "TOOLNAME": "coral",
+  "TOOLVERSION": "CORAL_2_3_21-0c6298d2d88b04357d1548a007ebd73c",
+  "USE": [
+    "root_cxxdefaults"
+  ],
+  "VARIABLES": [
+    "CORAL_BASE",
+    "LIBDIR",
+    "INCLUDE"
+  ]
+}

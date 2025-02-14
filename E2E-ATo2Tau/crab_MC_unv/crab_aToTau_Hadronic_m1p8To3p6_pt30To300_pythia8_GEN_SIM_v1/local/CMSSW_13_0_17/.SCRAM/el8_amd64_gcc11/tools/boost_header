@@ -1,0 +1,38 @@
+{
+  "BOOSTHEADER_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/boost/1.80.0-bff81045eb6d0806da34e08d781c05db",
+  "FLAGS": {
+    "CPPDEFINES": [
+      "BOOST_SPIRIT_THREADSAFE",
+      "PHOENIX_THREADSAFE",
+      "BOOST_MATH_DISABLE_STD_FPCLASSIFY",
+      "BOOST_UUID_RANDOM_PROVIDER_FORCE_POSIX"
+    ],
+    "CXXFLAGS": [
+      "-Wno-error=unused-variable"
+    ],
+    "SYSTEM_INCLUDE": [
+      "1"
+    ]
+  },
+  "INCLUDE": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/boost/1.80.0-bff81045eb6d0806da34e08d781c05db/include"
+  ],
+  "RUNTIME": {
+    "PATH:CMSSW_FWLITE_INCLUDE_PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/boost/1.80.0-bff81045eb6d0806da34e08d781c05db/include"
+    ],
+    "PATH:ROOT_INCLUDE_PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/boost/1.80.0-bff81045eb6d0806da34e08d781c05db/include"
+    ]
+  },
+  "TOOLNAME": "boost_header",
+  "TOOLVERSION": "1.80.0-bff81045eb6d0806da34e08d781c05db",
+  "USE": [
+    "sockets",
+    "root_cxxdefaults"
+  ],
+  "VARIABLES": [
+    "BOOSTHEADER_BASE",
+    "INCLUDE"
+  ]
+}

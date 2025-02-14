@@ -1,0 +1,40 @@
+{
+  "CEPGEN_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/cepgen/1.0.2patch1-84811c01aaaae54ba12949206213bd86",
+  "INCLUDE": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/cepgen/1.0.2patch1-84811c01aaaae54ba12949206213bd86/include"
+  ],
+  "LIB": [
+    "CepGen",
+    "CepGenHepMC2",
+    "CepGenHepMC3",
+    "CepGenLHAPDF",
+    "CepGenProcesses",
+    "CepGenPythia6"
+  ],
+  "LIBDIR": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/cepgen/1.0.2patch1-84811c01aaaae54ba12949206213bd86/lib64"
+  ],
+  "RUNTIME": {
+    "CEPGEN_PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/cepgen/1.0.2patch1-84811c01aaaae54ba12949206213bd86/share/CepGen"
+    ],
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/cepgen/1.0.2patch1-84811c01aaaae54ba12949206213bd86/bin"
+    ]
+  },
+  "TOOLNAME": "cepgen",
+  "TOOLVERSION": "1.0.2patch1-84811c01aaaae54ba12949206213bd86",
+  "USE": [
+    "gsl",
+    "openblas",
+    "hepmc",
+    "hepmc3",
+    "lhapdf",
+    "pythia6"
+  ],
+  "VARIABLES": [
+    "CEPGEN_BASE",
+    "LIBDIR",
+    "INCLUDE"
+  ]
+}

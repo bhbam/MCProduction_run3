@@ -1,0 +1,10 @@
+<tool name="sigcpp" version="3.2.0-50e87bb1933c52adc9bdc81af5f96b5c">
+  <lib name="sigc-3.0"/>
+  <client>
+    <environment name="SIGCPP_BASE" default="/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/sigcpp/3.2.0-50e87bb1933c52adc9bdc81af5f96b5c"/>
+    <environment name="LIBDIR" default="$SIGCPP_BASE/lib"/>
+    <environment name="INCLUDE" default="$SIGCPP_BASE/include/sigc++-3.0"/>
+  </client>
+  <runtime name="ROOT_INCLUDE_PATH" value="$INCLUDE" type="path"/>
+  <use name="root_cxxdefaults"/>
+</tool>

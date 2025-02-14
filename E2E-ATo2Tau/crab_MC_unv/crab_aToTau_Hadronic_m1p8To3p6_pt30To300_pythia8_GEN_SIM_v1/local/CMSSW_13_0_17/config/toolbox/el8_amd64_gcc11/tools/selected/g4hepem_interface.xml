@@ -1,0 +1,7 @@
+<tool name="g4hepem_interface" version="20221014-816ab0207492214a14ba7790fec2f33a">
+  <info url="https://github.com/mnovak42/g4hepem"/>
+  <client>
+    <environment name="G4HEPEM_INTERFACE_BASE" default="/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/g4hepem/20221014-816ab0207492214a14ba7790fec2f33a"/>
+    <environment name="INCLUDE" default="$G4HEPEM_INTERFACE_BASE/include/G4HepEm"/>
+  </client>
+</tool>

@@ -1,0 +1,6 @@
+<tool name="py3-pytest" version="7.1.3-902a9a85ec5816b9572edcb42704d237">
+  <client>
+    <environment name="PY3_PYTEST_BASE" default="/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/py3-pytest/7.1.3-902a9a85ec5816b9572edcb42704d237"/>
+  </client>
+  <runtime name="PATH" value="$PY3_PYTEST_BASE/bin" type="path"/>
+</tool>

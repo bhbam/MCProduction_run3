@@ -1,0 +1,13 @@
+{
+  "PY3_AUTOPEP8_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/py3-autopep8/1.7.0-25307f61818e9ca3fc2030bcfd2a2a2c",
+  "RUNTIME": {
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/py3-autopep8/1.7.0-25307f61818e9ca3fc2030bcfd2a2a2c/bin"
+    ]
+  },
+  "TOOLNAME": "py3-autopep8",
+  "TOOLVERSION": "1.7.0-25307f61818e9ca3fc2030bcfd2a2a2c",
+  "VARIABLES": [
+    "PY3_AUTOPEP8_BASE"
+  ]
+}

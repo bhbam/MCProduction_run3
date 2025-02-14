@@ -31,7 +31,7 @@ process.maxEvents = cms.untracked.PSet(
 
 # Input source
 process.source = cms.Source("PoolSource",
-    fileNames = cms.untracked.vstring('file:HLT_Pielup_ATo2Tau.root'),
+    fileNames = cms.untracked.vstring('file:HLT_pielup_AToTau_m1p8To3p6_pt30To300.root'),
     secondaryFileNames = cms.untracked.vstring()
 )
 
@@ -60,7 +60,7 @@ process.options = cms.untracked.PSet(
     numberOfConcurrentLuminosityBlocks = cms.untracked.uint32(0),
     numberOfConcurrentRuns = cms.untracked.uint32(1),
     numberOfStreams = cms.untracked.uint32(0),
-    numberOfThreads = cms.untracked.uint32(1),
+    numberOfThreads = cms.untracked.uint32(4),
     printDependencies = cms.untracked.bool(False),
     sizeOfStackForThreadsInKB = cms.optional.untracked.uint32,
     throwIfIllegalParameter = cms.untracked.bool(True),
@@ -84,7 +84,7 @@ process.AODSIMoutput = cms.OutputModule("PoolOutputModule",
         filterName = cms.untracked.string('')
     ),
     eventAutoFlushCompressedSize = cms.untracked.int32(31457280),
-    fileName = cms.untracked.string('file:AOD_ATo2Tau_extra_collection.root'),
+    fileName = cms.untracked.string('file:AOD_AToTau_m1p8To3p6_pt30To300.root'),
     # outputCommands = process.AODSIMEventContent.outputCommands,
     outputCommands = process.AODSIMEventContent.outputCommands+cms.untracked.vstring(
         'keep *_simSiPixelDigis_*_*',

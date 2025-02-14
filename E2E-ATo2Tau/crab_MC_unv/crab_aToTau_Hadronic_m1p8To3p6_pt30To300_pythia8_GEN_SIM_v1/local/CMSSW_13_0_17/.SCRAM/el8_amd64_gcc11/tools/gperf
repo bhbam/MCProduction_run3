@@ -1,0 +1,23 @@
+{
+  "GPERF_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/gperftools/2.9.1-fc0db064771dee08198f91498c4fabdd",
+  "LIB": [
+    "profiler"
+  ],
+  "LIBDIR": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/gperftools/2.9.1-fc0db064771dee08198f91498c4fabdd/lib"
+  ],
+  "RUNTIME": {
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/gperftools/2.9.1-fc0db064771dee08198f91498c4fabdd/bin"
+    ]
+  },
+  "TOOLNAME": "gperf",
+  "TOOLVERSION": "2.9.1-fc0db064771dee08198f91498c4fabdd",
+  "USE": [
+    "libunwind"
+  ],
+  "VARIABLES": [
+    "GPERF_BASE",
+    "LIBDIR"
+  ]
+}

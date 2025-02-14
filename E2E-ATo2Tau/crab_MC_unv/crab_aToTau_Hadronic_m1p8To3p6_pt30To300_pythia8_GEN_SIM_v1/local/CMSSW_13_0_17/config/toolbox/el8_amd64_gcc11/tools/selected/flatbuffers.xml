@@ -1,0 +1,9 @@
+<tool name="flatbuffers" version="1.12.0-0bf74850000dc3eeaa61708b095331f7">
+  <lib name="flatbuffers"/>
+  <client>
+    <environment name="FLATBUFFERS_BASE" default="/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/flatbuffers/1.12.0-0bf74850000dc3eeaa61708b095331f7"/>
+    <environment name="INCLUDE"          default="$FLATBUFFERS_BASE/include"/>
+    <environment name="LIBDIR"           default="$FLATBUFFERS_BASE/lib64"/>
+  </client>
+  <runtime name="PATH" value="$FLATBUFFERS_BASE/bin" type="path"/>
+</tool>

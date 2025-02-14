@@ -1,0 +1,26 @@
+{
+  "EIGEN_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/eigen/82dd3710dac619448f50331c1d6a35da673f764a-b0dc243d10365424e66e60c822ab818e",
+  "FLAGS": {
+    "CPPDEFINES": [
+      "EIGEN_DONT_PARALLELIZE"
+    ],
+    "CUDA_FLAGS": [
+      "--diag-suppress",
+      "20014"
+    ]
+  },
+  "INCLUDE": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/eigen/82dd3710dac619448f50331c1d6a35da673f764a-b0dc243d10365424e66e60c822ab818e/include/eigen3"
+  ],
+  "RUNTIME": {
+    "PATH:ROOT_INCLUDE_PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/eigen/82dd3710dac619448f50331c1d6a35da673f764a-b0dc243d10365424e66e60c822ab818e/include/eigen3"
+    ]
+  },
+  "TOOLNAME": "eigen",
+  "TOOLVERSION": "82dd3710dac619448f50331c1d6a35da673f764a-b0dc243d10365424e66e60c822ab818e",
+  "VARIABLES": [
+    "EIGEN_BASE",
+    "INCLUDE"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "LIB": [
+    "PyMVA"
+  ],
+  "TOOLNAME": "rootpymva",
+  "TOOLVERSION": "6.26.11-fec5b250e1cd56b91a094709de26e5b8",
+  "USE": [
+    "roottmva",
+    "numpy-c-api"
+  ]
+}

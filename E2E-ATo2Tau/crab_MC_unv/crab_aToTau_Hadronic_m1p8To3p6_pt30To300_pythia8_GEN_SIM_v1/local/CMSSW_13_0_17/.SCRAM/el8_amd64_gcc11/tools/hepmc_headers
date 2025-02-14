@@ -1,0 +1,20 @@
+{
+  "HEPMC_HEADERS_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/hepmc/2.06.10-892134cadaa17164a15ce108f11ec15f",
+  "INCLUDE": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/hepmc/2.06.10-892134cadaa17164a15ce108f11ec15f/include"
+  ],
+  "RUNTIME": {
+    "PATH:ROOT_INCLUDE_PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/hepmc/2.06.10-892134cadaa17164a15ce108f11ec15f/include"
+    ]
+  },
+  "TOOLNAME": "hepmc_headers",
+  "TOOLVERSION": "2.06.10-892134cadaa17164a15ce108f11ec15f",
+  "USE": [
+    "root_cxxdefaults"
+  ],
+  "VARIABLES": [
+    "HEPMC_HEADERS_BASE",
+    "INCLUDE"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "DCAP_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/dcap/2.47.12-ef79ca4ec7d517ad93018edfef3356c2",
+  "INCLUDE": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/dcap/2.47.12-ef79ca4ec7d517ad93018edfef3356c2/include"
+  ],
+  "LIB": [
+    "dcap"
+  ],
+  "LIBDIR": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/dcap/2.47.12-ef79ca4ec7d517ad93018edfef3356c2/lib"
+  ],
+  "RUNTIME": {
+    "PATH:ROOT_INCLUDE_PATH": [
+      "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/dcap/2.47.12-ef79ca4ec7d517ad93018edfef3356c2/include"
+    ]
+  },
+  "TOOLNAME": "dcap",
+  "TOOLVERSION": "2.47.12-ef79ca4ec7d517ad93018edfef3356c2",
+  "USE": [
+    "root_cxxdefaults"
+  ],
+  "VARIABLES": [
+    "DCAP_BASE",
+    "LIBDIR",
+    "INCLUDE"
+  ]
+}

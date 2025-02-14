@@ -1,0 +1,12 @@
+{
+  "G4HEPEM_INTERFACE_BASE": "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/g4hepem/20221014-816ab0207492214a14ba7790fec2f33a",
+  "INCLUDE": [
+    "/cvmfs/cms.cern.ch/el8_amd64_gcc11/external/g4hepem/20221014-816ab0207492214a14ba7790fec2f33a/include/G4HepEm"
+  ],
+  "TOOLNAME": "g4hepem_interface",
+  "TOOLVERSION": "20221014-816ab0207492214a14ba7790fec2f33a",
+  "VARIABLES": [
+    "G4HEPEM_INTERFACE_BASE",
+    "INCLUDE"
+  ]
+}
