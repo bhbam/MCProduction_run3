@@ -129,20 +129,50 @@ process.generator = cms.EDFilter("Pythia8PtGunV3p1",
             'ProcessLevel:all = off',
             # '25:new = PA PAbar 2 3 0 2.6 0.9 1.79999 3.59999 0.',
             # '25:oneChannel = 1 1.00 101 15 -15', # onMode bRatio meMode product1 product2
-            '25:new = PTau PTaubar 2 -3 0 1.7777 1.9 0. 3.5999 0.',# name antiName spinType chargeType colType m0 mWidth mMin mMax tau0
-            #h- nu -->11.5%
-            '25:oneChannel = 1 1 101 -211 16 ',
-            # '15:addChannel = 1 0.1 101 -321 16 ',
-            #h- pi0 nu -->25.9%
-            # '15:addChannel = 1 0.4 101 -211 111  16', # problemetic becuse of 111 that need another un indenfied particle
-            # '15:addChannel = 0 0 101 -321 111  16', # restricted due to mass k .5GeV
-            # h- pi0 pi0 nu -->9.5%
-            # '15:addChannel = 1 0.25 101 -211 111 111 16',
-            # '15:addChannel = 0 0. 101 -321 111 111 16', # restricted due to mass k .5GeV
-            #h- h+ h- nu -->9.8%
-            # '15:addChannel = 1 0.25 101 -211 211 -211 16',
-            #h- h+ h- pi0 nu --> 4.8%
-            # '15:addChannel = 1 0.2 101 -211 211 -211 111 16'
+            '15:new = PTau PTaubar 2 -3 0 1.77682 0 1.77682 1.77682 8.71100e-02.',# name antiName spinType chargeType colType m0 mWidth mMin mMax tau0
+            # Turn off all default tau decays
+            '15:onMode = off',
+
+            # Add decay channels from the table
+            '15:oneChannel = 1 0.1076825 1521 16 -211',                     # tau- -> nu_tau pi-
+            '15:addChannel = 1 0.0069601 1521 16 -321',                     # tau- -> nu_tau K-
+            '15:addChannel = 0 0.1772832 1531 16 13 -14',                   # tau- -> nu_tau mu- anti_nu_mu (off)
+            '15:addChannel = 0 0.1731072 1531 16 11 -12',                   # tau- -> nu_tau e- anti_nu_e (off)
+            '15:addChannel = 1 0.2537447 1532 16 111 -211',                 # tau- -> nu_tau pi0 pi-
+            '15:addChannel = 1 0.0015089 1532 16 311 -321',                 # tau- -> nu_tau K0 K-
+            '15:addChannel = 1 0.0001511 1532 16 221 -321',                 # tau- -> nu_tau eta K-
+            '15:addChannel = 1 0.0083521 1533 16 -211 -311',                # tau- -> nu_tau  pi- K0bar
+            '15:addChannel = 1 0.0042655 1533 16 111  -321',                # tau- -> nu_tau pi0 K-
+            '15:addChannel = 1 0.0924697 1541 16 111 111 -211',             # tau- -> nu_tau pi0 pi0 pi-
+            '15:addChannel = 1 0.0925691 1541 16 -211 -211 211',            # tau- -> nu_tau pi- pi- pi+
+            '15:addChannel = 1 0.0039772 1542 16 111 -211 -311',            # tau- -> nu_tau pi0 pi- K0bar
+            '15:addChannel = 1 0.0034701 1542 16 -211 211 -321',            # tau- -> nu_tau pi- pi+ K-
+            '15:addChannel = 1 0.0014318 1542 16 -211 -321 321',            # tau- -> nu_tau pi- K- K+
+            '15:addChannel = 1 0.0015809 1542 16 111 311 -321',             # tau- -> nu_tau pi0 K0 K-
+            '15:addChannel = 1 0.0011912 1542 16 130 -211 310',             # tau- -> nu_tau K_L0 pi- K_S0
+            '15:addChannel = 1 0.0006435 1542 16 111 111 -321',             # tau- -> nu_tau pi0 pi0 K-
+            '15:addChannel = 1 0.0002386 1542 16 130 130 -211',             # tau- -> nu_tau K_L0 K_L0 pi-
+            '15:addChannel = 1 0.0017520 1542 16 -211 310 310',             # tau- -> nu_tau pi- K_S0 K_S0
+            '15:addChannel = 1 0.0459365 1543 16 111 -211 221',             # tau- -> nu_tau pi0 pi- eta
+            '15:addChannel = 1 0.0104401 1544 16 22 111 -211',              # tau- -> nu_tau gamma pi0 pi-
+            '15:addChannel = 1 0.0459365 1551 16 111 -211 -211 211',        # tau- -> nu_tau pi0 pi- pi- pi+
+            '15:addChannel = 1 0.0104401 1551 16 111 111 111 -211',         # tau- -> nu_tau pi0 pi0 pi0 pi-
+            '15:addChannel = 1 0.0049069 1561 16 111 111 -211 -211 211',    # tau- -> nu_tau pi0 pi0 pi- pi- pi+
+            '15:addChannel = 1 0.0009515 1561 16 111 111 111 -211',         # tau- -> nu_tau pi0 pi0 pi0 pi-
+            '15:addChannel = 1 0.0008342 1561 16 -211 -211 -211 211 211',   # tau- -> nu_tau pi0 pi- pi- pi- pi+ pi+
+            '15:addChannel = 1 0.0001631 0 16 -211 211 211 221',            # tau- -> nu_tau pi- pi+ pi+ eta
+            '15:addChannel = 1 0.0001491 0 16 111 111 -211 221',            # tau- -> nu_tau pi0 pi0 pi- eta
+            '15:addChannel = 1 0.0001392 0 16 111 111 -211 223',            # tau- -> nu_tau pi0 pi0 pi- omega
+            '15:addChannel = 1 0.0001193 0 16 -211 -211 211 223',           # tau- -> nu_tau pi- pi- pi+ omega
+            '15:addChannel = 1 0.0004077 0 16 223 -321',                    # tau- -> nu_tau omega K-
+            '15:addChannel = 1 0.0004773 0 16 111 111 111 -321',            # tau- -> nu_tau pi0 pi0 pi0 K-
+            '15:addChannel = 1 0.0003052 0 16 111 -211 211 -321',           # tau- -> nu_tau pi0 pi- pi+ K-
+            '15:addChannel = 1 0.0002784 0 16 221 -323',                    # tau- -> nu_tau eta -f0
+            '15:addChannel = 1 0.0002366 0 16 -211 -211 211 -311',          # tau- -> nu_tau pi- pi- pi+ K0bar
+            '15:addChannel = 1 0.0002237 0 16 -211 -211 211 -311',          # tau- -> nu_tau pi- pi- pi+ K0bar
+            '15:addChannel = 1 0.0002953 0 16 111 -211 -311 311',           # tau- -> nu_tau pi0 pi-  K0bar K0
+            '15:addChannel = 1 0.0000590 0 16 111 -211 -321 321'            # tau- -> nu_tau pi0 pi- K- K+
+
         )
     ),
     Verbosity = cms.untracked.int32(0),
