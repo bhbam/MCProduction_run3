@@ -18,7 +18,7 @@ do
     echo "Running task at $(date)"
     # Place your task or command here
     # Task 1
-    crab resubmit -d crab_MC/crab_AOD_AToTau_Hadronic_m1p8To3p6_v2
+    crab resubmit -d crab_MC_un/crab_HLT_Pielup_Tau_hadronic_m1p8To3p6_v2
     # sleep 2
     # Task 2
     # crab status -d crab_projects/crab_signal_Mass_10_AODSIM_multiThreads
@@ -34,3 +34,4 @@ do
 done
 
 echo "Task completed after $total_days hours."
+#nohup ./automatic_bash_script_crab_resubmit.sh > HLT.log 2>&1 &

@@ -11,7 +11,7 @@ Mass_tag = 'm1p8To3p6'#'m3p6To18' #
 # Local job directory will be created in:
 # <config.General.workArea>/<config.General.requestName>
 config.General.workArea        = 'crab_MC_un'
-config.General.requestName     = 'HLT_Pielup_Tau_decay_Hadronic_%s_v2'%Mass_tag
+config.General.requestName     = 'HLT_Pielup_Tau_hadronic_%s_v2'%Mass_tag
 config.General.transferOutputs = True
 config.General.transferLogs    = True
 
@@ -28,7 +28,7 @@ config.JobType.allowUndistributedCMSSW = True
 dataset  = {
 'm3p6To18':'/GEN_SIM_ATo2Tau_m3p6To18_pt30To300_v2/lpcml-crab_aToTauTau_Hadronic_m3p6To18_pt30To300_pythia8_GEN_SIM_v2-c69efe833fac3615f1b10f8d0416619f/USER'
 ,'m1p2To3p6':'/GEN_SIM_ATo2Tau_m1p2To3p6_pt30To300_v4/lpcml-crab_aToTauTau_Hadronic_m1p2To3p6_pt30To300_pythia8_GEN_SIM_v4-5aad074e51915d56b4961eb07520b5cb/USER'
-,'m1p8To3p6':'/GEN_SIM_Tau_m1p8To3p6_pt30To300/lpcml-crab_Tau_Hadronic_decay_m1p8To3p6_pt30To300_pythia8_GEN_SIM-4a861603cb70d1646ecd962099e4984d/USER'
+,'m1p8To3p6':'/GEN_SIM_Tau_hadronic_m1p8To3p6_pt30To300_v2/lpcml-crab_Tau_hadronic_m1p8To3p6_pt30To300_pythia8_GEN_SIM_v2-d20bf728e40e8dc10734327464b3e73e/USER'
 }.get(Mass_tag, None)
 
 
