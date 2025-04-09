@@ -26,7 +26,7 @@ process.load('Configuration.StandardSequences.EndOfProcess_cff')
 process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
 
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(200),
+    input = cms.untracked.int32(1000),
     output = cms.optional.untracked.allowed(cms.int32,cms.PSet)
 )
 
@@ -58,7 +58,7 @@ process.options = cms.untracked.PSet(
     numberOfConcurrentLuminosityBlocks = cms.untracked.uint32(0),
     numberOfConcurrentRuns = cms.untracked.uint32(1),
     numberOfStreams = cms.untracked.uint32(0),
-    numberOfThreads = cms.untracked.uint32(1),
+    numberOfThreads = cms.untracked.uint32(4),
     printDependencies = cms.untracked.bool(False),
     sizeOfStackForThreadsInKB = cms.optional.untracked.uint32,
     throwIfIllegalParameter = cms.untracked.bool(True),
@@ -125,7 +125,8 @@ process.generator = cms.EDFilter("Pythia8ConcurrentGeneratorFilter",
             '25:m0 = 14',
             '25:onMode = off',
             '25:onIfMatch = 15 -15',
-            '15:onMode = on',
+            #add hadronic tau seletion
+            '15:onMode  = on',
             '15:offIfAny = 11 -11 13 -13'
         ),
         pythia8CP5Settings = cms.vstring(
