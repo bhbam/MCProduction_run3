@@ -1,10 +1,13 @@
 from CRABClient.UserUtilities import config
 config = config()
 
-Mass = '14'
+Mass = '8'
 
 inputDataset_ ={
 '3p7':'/HToAATo4Tau_hadronic_tauDecay_M3p7_Run3_2023/lpcml-3p7_AODSIM_newBigProd-953b1873547799e513f8a43f2c57e3b2/USER'
+,'8':'/HToAATo4Tau_hadronic_tauDecay_M8_Run3_2023/lpcml-signal_Mass_8_AODSIM_multiThreads-953b1873547799e513f8a43f2c57e3b2/USER'
+,'10':'/HToAATo4Tau_hadronic_tauDecay_M10_Run3_2023/lpcml-signal_Mass_10_AODSIM_multiThreads-953b1873547799e513f8a43f2c57e3b2/USER'
+,'12':'/HToAATo4Tau_hadronic_tauDecay_M12_Run3_2023/lpcml-signal_Mass_12_AODSIM_multiThreads-953b1873547799e513f8a43f2c57e3b2/USER'
 ,'14':'/HToAATo4Tau_hadronic_tauDecay_M14_Run3_2023/lpcml-signal_Mass_14_AODSIM_multiThreads-953b1873547799e513f8a43f2c57e3b2/USER'
 }.get(Mass, None)
 
