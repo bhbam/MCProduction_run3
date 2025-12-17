@@ -3,3 +3,6 @@
 __pycache__
 *.log
 crab_MC
+crab_MC_ATo2Tau_validation
+crab_projects*
+*__pycache__*

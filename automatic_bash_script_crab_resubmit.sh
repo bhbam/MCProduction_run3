@@ -1,37 +1,36 @@
 #!/bin/bash
 
-# Total duration in days
-total_days=10*60
-# Interval in hours
-interval_hours=1*60
-# Convert days to seconds
-let total_seconds=total_days
-# Convert interval to seconds
-let interval_seconds=interval_hours
+# Total duration in minutes (24 hours = 24 * 60)
+total_minutes=$((24 * 60))
+# total_minutes=60
+
+# Interval in minutes (e.g., every 60 minutes = 1 hour)
+interval_minutes=$((1 * 60))
+# interval_minutes=2
+
+# Convert to seconds
+total_seconds=$((total_minutes * 60))
+interval_seconds=$((interval_minutes * 60))
 
 # Get the current timestamp
 start_time=$(date +%s)
 end_time=$((start_time + total_seconds))
 
-while [ $(date +%s) -lt $end_time ]
-do
-    echo "Running task at $(date)"
-    # Place your task or command here
-    # Task 1
-    crab resubmit -d crab_projects/crab_3p7_miniAODSIM
-    sleep 2
-    # Task 2
-    crab resubmit -d crab_projects/crab_14_miniAODSIM
-    # sleep 2
-    # # Task 3
-    # crab status -d crab_projects/crab_signal_Mass_12_AODSIM_multiThreads
-    # sleep 2
-    # # Task 4
-    # crab status -d crab_projects/crab_signal_Mass_14_AODSIM_multiThreads
+# Define the sample list
+sample_list=('14' 'DY2L' 'TTbar' 'QCD' 'WLNu' 'HTauTau')
 
-    # Sleep for the interval duration
+# Main loop
+while [ $(date +%s) -lt $end_time ]; do
+    echo "Running tasks at $(date)"
+
+    for sample in "${sample_list[@]}"; do
+        echo "Resubmitting for sample: $sample"
+        crab resubmit -d crab_projects_June7_RAWAOD-RecHits/crab_"$sample"_miniAODSIM_RAWAOD-RecHits
+        sleep 2
+    done
+
+    echo "Sleeping for $interval_minutes minutes..."
     sleep $interval_seconds
 done
 
-echo "Task completed after $total_days hours."
-## to run ./automatic_bash_script_crab_resubmit.sh > aotomatic.log 2>&1 &
+echo "Task completed after $total_minutes minutes."
