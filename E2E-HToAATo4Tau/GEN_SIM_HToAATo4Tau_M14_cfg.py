@@ -26,7 +26,7 @@ process.load('Configuration.StandardSequences.EndOfProcess_cff')
 process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
 
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(1000),
+    input = cms.untracked.int32(91000),
     output = cms.optional.untracked.allowed(cms.int32,cms.PSet)
 )
 
@@ -102,7 +102,7 @@ process.GlobalTag = GlobalTag(process.GlobalTag, '130X_mcRun3_2023_realistic_pos
 process.genHToAATo4TauFilter = cms.EDFilter("GenHToAATo4TauFilter",
    src       = cms.InputTag("genParticles"), #GenParticles collection as input
    nHiggs    = cms.double(1),    #Number of H->AA->4Tau candidates
-   tauPtCut  = cms.double(20.0), #at least a GenTau with this minimum pT
+   tauPtCut  = cms.double(30.0), #at least a GenTau with this minimum pT
    tauEtaCut = cms.double(2.4),    #GenTau eta max value
    taudRCut  = cms.double(4444.4)   #GenTauTau dR max value for merged taus : Note this is ignored for this generation in actual filter
 

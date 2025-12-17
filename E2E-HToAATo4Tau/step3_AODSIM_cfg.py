@@ -32,7 +32,7 @@ process.maxEvents = cms.untracked.PSet(
 # Input source
 process.source = cms.Source("PoolSource",
     #fileNames = cms.untracked.vstring('root://se01.indiacms.res.in//store/mc/Run3Summer23BPixDRPremix/GluGluHToTauTau_M-125_TuneCP5_13p6TeV_powheg-pythia8/GEN-SIM-RAW/130X_mcRun3_2023_realistic_postBPix_v2-v2/80000/0c25d93d-216c-4917-a6a2-7a63648a5ba4.root'),
-    fileNames = cms.untracked.vstring('file:Digi_Raw_VBFH_HToAATo4Tau_M3p7.root'),
+    fileNames = cms.untracked.vstring('file:Digi_Premix_HLT_HToAATo4Tau_M14.root'),
     secondaryFileNames = cms.untracked.vstring()
 )
 
@@ -85,7 +85,7 @@ process.AODSIMoutput = cms.OutputModule("PoolOutputModule",
         filterName = cms.untracked.string('')
     ),
     eventAutoFlushCompressedSize = cms.untracked.int32(31457280),
-    fileName = cms.untracked.string('file:AOD_VBFH_HToAATo4Tau.root'),
+    fileName = cms.untracked.string('file:AOD_HToAATo4Tau_M14.root'),
     outputCommands = process.AODSIMEventContent.outputCommands+cms.untracked.vstring(
 	'keep *_simSiPixelDigis_*_*',
 	'keep *_simSiStripDigis_*_*',

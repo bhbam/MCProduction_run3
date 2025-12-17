@@ -27,7 +27,7 @@ process.load('Configuration.StandardSequences.EndOfProcess_cff')
 process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
 
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(10),
+    input = cms.untracked.int32(-1),
     output = cms.optional.untracked.allowed(cms.int32,cms.PSet)
 )
 
@@ -35,7 +35,7 @@ process.maxEvents = cms.untracked.PSet(
 process.source = cms.Source("PoolSource",
     dropDescendantsOfDroppedBranches = cms.untracked.bool(False),
     # fileNames = cms.untracked.vstring('root://cmsxrootd.fnal.gov//store/group/lpcml/rchudasa/MCGenerationRun3/HToAATo4Tau_hadronic_tauDecay_M4_Run3_2023/crab_GEN_SIM_HToAATo4Tau_tauDecay_M4/241204_044851/0000/GEN_SIM_HToAATo4Tau_M4_1.root'),
-    fileNames = cms.untracked.vstring('file:/uscms/home/bbbam/nobackup/analysis_run3/MCGeneration/CMSSW_13_0_17/src/GEN_SIM_VBFH_HToAATo4Tau_M3p7.root'),
+    fileNames = cms.untracked.vstring('file:/uscms/home/bbbam/nobackup/analysis_run3/MCGeneration/CMSSW_13_0_17/src/MCProduction_run3/E2E-HToAATo4Tau/GEN_SIM_HToAATo4Tau_M14.root'),
     inputCommands = cms.untracked.vstring(
         'keep *',
         'drop *_genParticles_*_*',
@@ -104,7 +104,7 @@ process.PREMIXRAWoutput = cms.OutputModule("PoolOutputModule",
         dataTier = cms.untracked.string('GEN-SIM-RAW'),
         filterName = cms.untracked.string('')
     ),
-    fileName = cms.untracked.string('file:Digi_Premix_HLT_VBFH_HToAATo4Tau.root'),
+    fileName = cms.untracked.string('file:Digi_Premix_HLT_HToAATo4Tau_M14.root'),
     outputCommands = process.PREMIXRAWEventContent.outputCommands,
     splitLevel = cms.untracked.int32(0)
 )
