@@ -7,11 +7,11 @@ config = config()
 # crab status -d <config.General.workArea>/<config.General.requestName>
 # To resubmit jobs:
 # crab resubmit -d <config.General.workArea>/<config.General.requestName>
-Mass_tag = 'm1p8To3p6' #
+Mass_tag = 'ATo2Tau_mass14' #
 # Local job directory will be created in:
 # <config.General.workArea>/<config.General.requestName>
-config.General.workArea        = 'crab_MC'
-config.General.requestName     = 'AOD_Tau_hadronic_%s_v2'%Mass_tag
+config.General.workArea        = 'crab_MC_ATo2Tau_validation'
+config.General.requestName     = 'AOD_%s_valid'%Mass_tag
 config.General.transferOutputs = True
 config.General.transferLogs    = True
 
@@ -28,9 +28,10 @@ config.JobType.allowUndistributedCMSSW = True
 dataset  = {
 'm3p6To18':'/GEN_SIM_ATo2Tau_m3p6To18_pt30To300_v2/lpcml-HLT_Pielup_ATo4Tau_Hadronic_m3p6To18-8a4c70c5aaaf26ad44e675df103c838b/USER'
 ,'m1p2To3p6':'/GEN_SIM_ATo2Tau_m1p2To3p6_pt30To300_v4/lpcml-HLT_Pielup_ATo4Tau_Hadronic_m1p2To3p6-8a4c70c5aaaf26ad44e675df103c838b/USER'
-,'m1p8To3p6':'/GEN_SIM_Tau_hadronic_m1p8To3p6_pt30To300_v2/lpcml-HLT_Pielup_Tau_hadronic_m1p8To3p6_v2-26240d1e6039ee29161351aa2c33106e/USER'
+,'ATo2Tau_mass3p7':'/GEN_SIM_ATo2Tau_Mass3p7_GeV_pt30To300_GeV_valid/lpcml-HLT_Pielup_ATo2Tau_mass3p7_validation-26240d1e6039ee29161351aa2c33106e/USER'
+,'ATo2Tau_mass8':'/GEN_SIM_ATo2Tau_Mass8_GeV_pt30To300_GeV_valid/lpcml-HLT_Pielup_ATo2Tau_mass8_validation-26240d1e6039ee29161351aa2c33106e/USER'
+,'ATo2Tau_mass14':'/GEN_SIM_ATo2Tau_Mass14_GeV_pt30To300_GeV_valid/lpcml-HLT_Pielup_ATo2Tau_mass14_validation-26240d1e6039ee29161351aa2c33106e/USER'
 }.get(Mass_tag, None)
-
 
 config.Data.inputDataset = dataset
 config.Data.splitting      = 'FileBased'
